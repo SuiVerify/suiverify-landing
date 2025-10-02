@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SuiVerify - Digital Identity Infrastructure",
-  description: "Secure, Private, and Blockchain-Powered Identity Verification on Sui Ecosystem",
+  description: "Secure, Private, and Identity Verification on Sui Ecosystem",
   icons: {
     icon: "/favicon.png",
   },
