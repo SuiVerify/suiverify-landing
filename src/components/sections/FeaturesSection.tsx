@@ -48,12 +48,27 @@ const FeaturesSection: React.FC = () => {
                 <div className="absolute inset-0 rounded-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-300" style={{ background: colors.gradients.primary }}></div>
                 <div className="relative z-10">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-16 h-16 rounded-3xl flex items-center justify-center shadow-xl" style={{ 
-                      background: feature.gradient || feature.backgroundColor,
-                      backgroundColor: feature.backgroundColor 
-                    }}>
-                      {feature.icon}
-                    </div>
+                    <motion.div 
+                      className="w-16 h-16 rounded-3xl flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300" 
+                      style={{ 
+                        background: feature.gradient || feature.backgroundColor,
+                        backgroundColor: feature.backgroundColor 
+                      }}
+                      whileHover={{ 
+                        scale: 1.1, 
+                        rotate: 5,
+                        transition: { duration: 0.2 }
+                      }}
+                    >
+                      <motion.div
+                        whileHover={{ 
+                          scale: 1.2,
+                          transition: { duration: 0.2 }
+                        }}
+                      >
+                        {feature.icon}
+                      </motion.div>
+                    </motion.div>
                     <h3 className="text-2xl font-bold" style={{ color: colors.white }}>{feature.title}</h3>
                   </div>
                   <p className="text-lg leading-relaxed" style={{ color: colors.lightBlue }}>

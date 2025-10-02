@@ -2,10 +2,15 @@
 
 import Link from 'next/link';
 
-const LandingHeader = () => {
-  const handleLaunchApp = () => {
-    // For now, we'll just link to the main app
-    window.open('http://localhost:5173', '_blank');
+interface LandingHeaderProps {
+  onWaitlistClick?: () => void;
+}
+
+const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
+  const handleWaitlistClick = () => {
+    if (onWaitlistClick) {
+      onWaitlistClick();
+    }
   };
 
   return (
@@ -26,9 +31,9 @@ const LandingHeader = () => {
 
           {/* Right Side - Balance and Connect Wallet */}
           <div className="flex items-center space-x-4">
-            {/* Connect Wallet Button */}
-            <button onClick={handleLaunchApp} className="cursor-pointer bg-[#2d9eff] hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors">
-              Launch App
+            {/* Waitlist Button */}
+            <button onClick={handleWaitlistClick} className="cursor-pointer bg-[#2d9eff] hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+              Waitlist
             </button>
 
             {/* Mobile Menu Button */}

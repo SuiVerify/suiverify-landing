@@ -1,21 +1,23 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import LightRays from '../ui/lightRays';
 import LandingHeader from '../ui/landingHeader';
+import WaitlistDialog from '../ui/WaitlistDialog';
 import { colors } from '@/lib/brand';
 
 const HeroSection: React.FC = () => {
-  const handleLaunchApp = () => {
-    // For now, we'll just link to the main app
-    window.open('http://localhost:5173', '_blank');
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
+
+  const handleWaitlistClick = () => {
+    setIsWaitlistOpen(true);
   };
 
   return (
     <div className="w-full h-screen relative" style={{ background: colors.gradients.hero }}>
       <div className="absolute top-5 w-full z-20">
-        <LandingHeader />
+        <LandingHeader onWaitlistClick={handleWaitlistClick} />
       </div>
 
       <LightRays
@@ -105,7 +107,7 @@ const HeroSection: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              onClick={handleLaunchApp}
+              onClick={handleWaitlistClick}
               className="font-bold px-12 py-3 cursor-pointer rounded-xl transition-all duration-300"
               style={{
                 background: colors.primary,
@@ -113,19 +115,18 @@ const HeroSection: React.FC = () => {
                 border: `2px solid ${colors.primary}`
               }}
             >
-              Get Started
+              Waitlist
             </motion.button>
             <motion.a
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              href="https://kiran-4.gitbook.io/suiverify/" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="https://suiverify.gitbook.io/suiverify/" target="_blank" rel="noopener noreferrer"
               className="font-bold px-12 py-3 cursor-pointer rounded-xl transition-all duration-300"
               style={{
                 border: `2px solid ${colors.lightBlue}`,
                 color: colors.lightBlue,
-                backgroundColor: 'transparent'
+                backgroundColor: 'transparent',
+                textDecoration: 'none'
               }}
             >
               Learn More
@@ -301,6 +302,12 @@ const HeroSection: React.FC = () => {
           </motion.div>
         </div>
       </div>
+
+      {/* Waitlist Dialog */}
+      <WaitlistDialog 
+        isOpen={isWaitlistOpen} 
+        onClose={() => setIsWaitlistOpen(false)} 
+      />
     </div>
   );
 };
