@@ -94,7 +94,7 @@ const HeroSection: React.FC = () => {
             className="text-lg md:text-xl lg:text-2xl mb-3 max-w-4xl mx-auto leading-relaxed"
             style={{ color: colors.lightBlue }}
           >
-            Secure, Private, and Blockchain-Powered Identity Verification on SUI Ecosystem
+            Secure, Private, and Blockchain-Powered Identity Verification on Sui Ecosystem
           </motion.p>
 
           {/* CTA Buttons */}
