@@ -105,7 +105,7 @@ const WaitlistDialog: React.FC<WaitlistDialogProps> = ({ isOpen, onClose }) => {
               {/* Footer Note */}
               <div className="text-center pt-4 border-t" style={{ borderColor: colors.primary + '40' }}>
                 <p className="text-xs" style={{ color: colors.lightBlue + 'CC' }}>
-                  We'll reach out with exclusive early access and testing opportunities
+                  We&apos;ll reach out with exclusive early access and testing opportunities
                 </p>
               </div>
             </div>

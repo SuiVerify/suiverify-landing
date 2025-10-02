@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import Image from 'next/image';
 
 interface LandingHeaderProps {
   onWaitlistClick?: () => void;
@@ -20,7 +20,7 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src="/logo.svg" alt="SuiVerify" className="h-auto w-24" />
+            <Image src="/logo.svg" alt="SuiVerify" width={96} height={40} className="h-auto" />
           </div>
 
           {/* Navigation Links */}

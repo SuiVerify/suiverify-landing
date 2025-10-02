@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { colors } from '@/lib/brand';
 
@@ -10,7 +11,7 @@ const FeaturesSection: React.FC = () => {
       title: "Nautilus",
       description: "Nautilus for offchain computation and verifiability onchain - enabling secure identity verification processing",
       icon: (
-        <img src="/nautilus.png" alt="Nautilus" className="w-8 h-8 object-contain" />
+        <Image src="/nautilus.png" alt="Nautilus" width={32} height={32} className="object-contain" />
       ),
       gradient: colors.gradients.primary
     },
@@ -18,7 +19,7 @@ const FeaturesSection: React.FC = () => {
       title: "Seal",
       description: "Seal for encrypting user KYC documents and can be then decrypted only by Government addresses using SEAL protocol",
       icon: (
-        <img src="/Seal_logo.png" alt="Seal" className="w-8 h-8 object-contain rounded-full" />
+        <Image src="/Seal_logo.png" alt="Seal" width={32} height={32} className="object-contain rounded-full" />
       ),
       backgroundColor: colors.lightBlue
     },
@@ -26,7 +27,7 @@ const FeaturesSection: React.FC = () => {
       title: "Walrus",
       description: "Walrus for storage of the documents to have our programmability of the data intact with decentralized storage",
       icon: (
-        <img src="/walrus.svg" alt="Walrus" className="w-8 h-8 object-contain" />
+        <Image src="/walrus.svg" alt="Walrus" width={32} height={32} className="object-contain" />
       ),
       gradient: colors.gradients.primary
     }
@@ -79,14 +80,13 @@ const FeaturesSection: React.FC = () => {
               </div>
             ))}
           </div>
-
           {/* Right Content - SuiVerify Ecosystem Architecture */}
           <div className="flex justify-center relative">
             <div className="w-[500px] h-[500px] relative">
               {/* SUI Logo in Center */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
                 <div className="w-24 h-24 rounded-full flex items-center justify-center shadow-xl border-2" style={{ background: colors.gradients.primary, borderColor: colors.white }}>
-                  <img src="/suilogo.svg" alt="SUI" className="w-12 h-12 filter brightness-0 invert" />
+                  <Image src="/suilogo.svg" alt="SUI" width={48} height={48} className="filter brightness-0 invert" />
                 </div>
                 <p className="text-sm font-semibold mt-2" style={{ color: colors.white }}>Sui</p>
               </div>
@@ -127,7 +127,7 @@ const FeaturesSection: React.FC = () => {
                 <div className="backdrop-blur-sm rounded-2xl p-4 border shadow-lg max-w-[140px]" style={{ backgroundColor: colors.darkNavy, borderColor: colors.primary }}>
                   <div className="flex flex-col items-center text-center">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: colors.primary }}>
-                      <img src="/walrus.svg" alt="Walrus" className="w-8 h-8" />
+                      <Image src="/walrus.svg" alt="Walrus" width={32} height={32} />
                     </div>
                     <h4 className="font-bold text-sm mb-1" style={{ color: colors.white }}>Walrus</h4>
                     <p className="text-xs" style={{ color: colors.lightBlue }}>Decentralized Storage</p>
@@ -140,7 +140,7 @@ const FeaturesSection: React.FC = () => {
                 <div className="backdrop-blur-sm rounded-2xl p-4 border shadow-lg max-w-[140px]" style={{ backgroundColor: colors.darkNavy, borderColor: colors.primary }}>
                   <div className="flex flex-col items-center text-center">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: colors.lightBlue }}>
-                      <img src="/Seal_logo.png" alt="Seal" className="w-8 h-8 object-contain rounded-full" />
+                      <Image src="/Seal_logo.png" alt="Seal" width={32} height={32} className="object-contain rounded-full" />
                     </div>
                     <h4 className="font-bold text-sm mb-1" style={{ color: colors.white }}>Seal</h4>
                     <p className="text-xs" style={{ color: colors.lightBlue }}>Document Encryption & Decryption</p>
@@ -153,7 +153,7 @@ const FeaturesSection: React.FC = () => {
                 <div className="backdrop-blur-sm rounded-2xl p-4 border shadow-lg max-w-[140px]" style={{ backgroundColor: colors.darkNavy, borderColor: colors.primary }}>
                   <div className="flex flex-col items-center text-center">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center mb-2" style={{ backgroundColor: colors.primary }}>
-                      <img src="/nautilus.png" alt="Nautilus" className="w-8 h-8 object-contain" />
+                      <Image src="/nautilus.png" alt="Nautilus" width={32} height={32} className="object-contain" />
                     </div>
                     <h4 className="font-bold text-sm mb-1" style={{ color: colors.white }}>Nautilus</h4>
                     <p className="text-xs" style={{ color: colors.lightBlue }}>Off-chain Computation</p>
