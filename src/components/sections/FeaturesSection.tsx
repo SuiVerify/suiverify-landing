@@ -80,7 +80,7 @@ const FeaturesSection: React.FC = () => {
                 <div className="w-24 h-24 rounded-full flex items-center justify-center shadow-xl border-2" style={{ background: colors.gradients.primary, borderColor: colors.white }}>
                   <img src="/suilogo.svg" alt="SUI" className="w-12 h-12 filter brightness-0 invert" />
                 </div>
-                <p className="text-sm font-semibold mt-2" style={{ color: colors.white }}>SUI Blockchain</p>
+                <p className="text-sm font-semibold mt-2" style={{ color: colors.white }}>Sui</p>
               </div>
 
               {/* Connection Lines */}
