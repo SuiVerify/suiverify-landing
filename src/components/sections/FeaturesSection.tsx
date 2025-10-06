@@ -227,7 +227,7 @@ const FeaturesSection: React.FC = () => {
                   whileHover={{ scale: 1.05 }}
                   viewport={{ once: true }}
                 >
-                  SUI Blockchain
+                  Sui
                 </motion.p>
               </div>
 
