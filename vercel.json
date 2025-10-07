@@ -2,27 +2,27 @@
   "rewrites": [
     {
       "source": "/auth",
-      "destination": "https://suiverify-main-git-main-ashwins-projects-30bd381d.vercel.app/auth"
+      "destination": "https://suiverify-main.vercel.app/auth"
     },
     {
       "source": "/dashboard",
-      "destination": "https://suiverify-main-git-main-ashwins-projects-30bd381d.vercel.app/dashboard"
+      "destination": "https://suiverify-main.vercel.app/dashboard"
     },
     {
       "source": "/kyc",
-      "destination": "https://suiverify-main-git-main-ashwins-projects-30bd381d.vercel.app/kyc"
+      "destination": "https://suiverify-main.vercel.app/kyc"
     },
     {
       "source": "/admin",
-      "destination": "https://suiverify-main-git-main-ashwins-projects-30bd381d.vercel.app/admin"
+      "destination": "https://suiverify-main.vercel.app/admin"
     },
     {
       "source": "/adminLogin",
-      "destination": "https://suiverify-main-git-main-ashwins-projects-30bd381d.vercel.app/adminLogin"
+      "destination": "https://suiverify-main.vercel.app/adminLogin"
     },
     {
       "source": "/api/(.*)",
-      "destination": "https://suiverify-main-git-main-ashwins-projects-30bd381d.vercel.app/api/$1"
+      "destination": "https://suiverify-main.vercel.app/api/$1"
     }
   ]
 }
