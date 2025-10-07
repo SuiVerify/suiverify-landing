@@ -4,20 +4,24 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import LightRays from '../ui/lightRays';
 import LandingHeader from '../ui/landingHeader';
-import WaitlistDialog from '../ui/WaitlistDialog';
+import AuthDialog from '../ui/AuthDialog';
 import { colors } from '@/lib/brand';
 
 const HeroSection: React.FC = () => {
-  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
 
-  const handleWaitlistClick = () => {
-    setIsWaitlistOpen(true);
+  const handleAuthClick = () => {
+    setIsAuthOpen(true);
+  };
+
+  const handleAuthSuccess = () => {
+    console.log('Authentication successful');
   };
 
   return (
     <div className="w-full h-screen relative" style={{ background: colors.gradients.hero }}>
       <div className="absolute top-5 w-full z-20">
-        <LandingHeader onWaitlistClick={handleWaitlistClick} />
+        <LandingHeader onWaitlistClick={handleAuthClick} />
       </div>
 
       <LightRays
@@ -107,7 +111,7 @@ const HeroSection: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              onClick={handleWaitlistClick}
+              onClick={handleAuthClick}
               className="font-bold px-12 py-3 cursor-pointer rounded-xl transition-all duration-300"
               style={{
                 background: colors.primary,
@@ -115,7 +119,7 @@ const HeroSection: React.FC = () => {
                 border: `2px solid ${colors.primary}`
               }}
             >
-              Waitlist
+              Access Dashboard
             </motion.button>
             <motion.a
               whileHover={{ scale: 1.05, y: -2 }}
@@ -303,10 +307,11 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Waitlist Dialog */}
-      <WaitlistDialog 
-        isOpen={isWaitlistOpen} 
-        onClose={() => setIsWaitlistOpen(false)} 
+      {/* Auth Dialog */}
+      <AuthDialog 
+        isOpen={isAuthOpen} 
+        onClose={() => setIsAuthOpen(false)} 
+        onSuccess={handleAuthSuccess}
       />
     </div>
   );
