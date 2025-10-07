@@ -4,24 +4,25 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import LightRays from '../ui/lightRays';
 import LandingHeader from '../ui/landingHeader';
-import AuthDialog from '../ui/AuthDialog';
+import WaitlistDialog from '../ui/WaitlistDialog';
 import { colors } from '@/lib/brand';
 
 const HeroSection: React.FC = () => {
-  const [isAuthOpen, setIsAuthOpen] = useState(false);
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
-  const handleAuthClick = () => {
-    setIsAuthOpen(true);
+  const handleWaitlistClick = () => {
+    setIsWaitlistOpen(true);
   };
 
-  const handleAuthSuccess = () => {
-    console.log('Authentication successful');
+  const handleAccessClick = () => {
+    // Route to auth page in main app (local testing)
+    window.location.href = 'http://localhost:3001/auth';
   };
 
   return (
     <div className="w-full h-screen relative" style={{ background: colors.gradients.hero }}>
       <div className="absolute top-5 w-full z-20">
-        <LandingHeader onWaitlistClick={handleAuthClick} />
+        <LandingHeader onWaitlistClick={handleWaitlistClick} />
       </div>
 
       <LightRays
@@ -111,7 +112,7 @@ const HeroSection: React.FC = () => {
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              onClick={handleAuthClick}
+              onClick={handleWaitlistClick}
               className="font-bold px-12 py-3 cursor-pointer rounded-xl transition-all duration-300"
               style={{
                 background: colors.primary,
@@ -119,22 +120,21 @@ const HeroSection: React.FC = () => {
                 border: `2px solid ${colors.primary}`
               }}
             >
-              Access Dashboard
+              Request Access
             </motion.button>
-            <motion.a
+            <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              href="https://suiverify.gitbook.io/suiverify/" target="_blank" rel="noopener noreferrer"
+              onClick={handleAccessClick}
               className="font-bold px-12 py-3 cursor-pointer rounded-xl transition-all duration-300"
               style={{
                 border: `2px solid ${colors.lightBlue}`,
                 color: colors.lightBlue,
-                backgroundColor: 'transparent',
-                textDecoration: 'none'
+                backgroundColor: 'transparent'
               }}
             >
-              Learn More
-            </motion.a>
+              I Have Access
+            </motion.button>
           </motion.div>
 
           {/* Feature Highlights */}
@@ -307,11 +307,10 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Auth Dialog */}
-      <AuthDialog 
-        isOpen={isAuthOpen} 
-        onClose={() => setIsAuthOpen(false)} 
-        onSuccess={handleAuthSuccess}
+      {/* Waitlist Dialog */}
+      <WaitlistDialog 
+        isOpen={isWaitlistOpen} 
+        onClose={() => setIsWaitlistOpen(false)} 
       />
     </div>
   );
