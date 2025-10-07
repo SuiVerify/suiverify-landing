@@ -15,8 +15,8 @@ const HeroSection: React.FC = () => {
   };
 
   const handleAccessClick = () => {
-    // Route to auth page in main app (local testing)
-    window.location.href = 'http://localhost:3001/auth';
+    // Route to auth page on same domain (via Vercel rewrite)
+    window.location.href = '/auth';
   };
 
   return (
