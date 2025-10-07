@@ -15,6 +15,11 @@ const HeroSection: React.FC = () => {
   };
 
   const handleAccessClick = () => {
+    // Clear any existing auth data to prevent redirect loops
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('suiverify_auth');
+      localStorage.removeItem('suiverify_login_attempts');
+    }
     // Route to auth page on same domain (via Vercel rewrite)
     window.location.href = '/auth';
   };
