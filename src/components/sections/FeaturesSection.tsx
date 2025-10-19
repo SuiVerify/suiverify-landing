@@ -13,7 +13,7 @@ const FeaturesSection: React.FC = () => {
       icon: (
         <Image src="/nautilus.png" alt="Nautilus" width={32} height={32} className="object-contain" />
       ),
-      gradient: colors.gradients.primary
+      gradient: "bg-gradient-to-r from-sky-blue to-brand-teal"
     },
     {
       title: "Seal",
@@ -21,7 +21,7 @@ const FeaturesSection: React.FC = () => {
       icon: (
         <Image src="/Seal_logo.png" alt="Seal" width={32} height={32} className="object-contain rounded-full" />
       ),
-      backgroundColor: colors.lightBlue
+      backgroundColor: "bg-sky-blue"
     },
     {
       title: "Walrus",
@@ -29,12 +29,12 @@ const FeaturesSection: React.FC = () => {
       icon: (
         <Image src="/walrus.svg" alt="Walrus" width={32} height={32} className="object-contain" />
       ),
-      gradient: colors.gradients.primary
+      gradient: "bg-gradient-to-r from-sky-blue to-brand-teal"
     }
   ];
 
   return (
-    <section id='features' className="py-20 px-6" style={{ backgroundColor: colors.darkerNavy }}>
+    <section id='features' className="py-20 px-6 bg-charcoal-text">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           className="text-center mb-16"
@@ -44,8 +44,7 @@ const FeaturesSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <motion.h2 
-            className="text-4xl font-bold mb-4" 
-            style={{ color: colors.white }}
+            className="text-4xl font-bold mb-4 text-ghost-white"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -54,8 +53,7 @@ const FeaturesSection: React.FC = () => {
             SuiVerify Makes Identity Verification Seamless
           </motion.h2>
           <motion.p 
-            className="text-xl" 
-            style={{ color: colors.lightBlue }}
+            className="text-xl text-sky-blue"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -71,8 +69,7 @@ const FeaturesSection: React.FC = () => {
             {features.map((feature, index) => (
               <motion.div 
                 key={index} 
-                className="group relative backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden" 
-                style={{ backgroundColor: `${colors.darkNavy}E6` }}
+                className="group relative backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden bg-charcoal-text/90"
                 initial={{ opacity: 0, x: -50, rotateY: -15 }}
                 whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
                 transition={{ 
@@ -88,16 +85,15 @@ const FeaturesSection: React.FC = () => {
                 }}
                 viewport={{ once: true, margin: "-100px" }}
               >
-                <div className="absolute inset-0 rounded-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-300" style={{ background: colors.gradients.primary }}></div>
+                <div className="absolute inset-0 rounded-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-300 bg-gradient-to-r from-sky-blue to-brand-teal"></div>
                 
                 {/* Floating Particles Effect */}
                 <div className="absolute inset-0 overflow-hidden">
                   {[...Array(4)].map((_, i) => (
                     <motion.div
                       key={i}
-                      className="absolute w-1 h-1 rounded-full opacity-20"
+                      className="absolute w-1 h-1 rounded-full opacity-20 bg-sky-blue"
                       style={{ 
-                        backgroundColor: colors.primary, 
                         left: `${20 + i * 20}%`, 
                         top: `${30 + i * 15}%` 
                       }}
@@ -120,11 +116,7 @@ const FeaturesSection: React.FC = () => {
                 <div className="relative z-10">
                   <div className="flex items-center space-x-4 mb-6">
                     <motion.div 
-                      className="w-16 h-16 rounded-3xl flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300" 
-                      style={{ 
-                        background: feature.gradient || feature.backgroundColor,
-                        backgroundColor: feature.backgroundColor 
-                      }}
+                      className={`w-16 h-16 rounded-3xl flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300 ${feature.gradient || feature.backgroundColor}`}
                       initial={{ scale: 0, rotate: -180 }}
                       whileInView={{ scale: 1, rotate: 0 }}
                       transition={{ 
@@ -136,7 +128,7 @@ const FeaturesSection: React.FC = () => {
                       whileHover={{ 
                         scale: 1.15, 
                         rotate: 360,
-                        boxShadow: `0 0 30px ${colors.primary}60`,
+                        boxShadow: `0 0 30px rgba(111,189,240,0.6)`,
                         transition: { duration: 0.4 }
                       }}
                       viewport={{ once: true }}
@@ -152,8 +144,7 @@ const FeaturesSection: React.FC = () => {
                       </motion.div>
                     </motion.div>
                     <motion.h3 
-                      className="text-2xl font-bold" 
-                      style={{ color: colors.white }}
+                      className="text-2xl font-bold text-ghost-white"
                       initial={{ opacity: 0, x: 20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.6, delay: 0.8 + index * 0.2 }}
@@ -163,8 +154,7 @@ const FeaturesSection: React.FC = () => {
                     </motion.h3>
                   </div>
                   <motion.p 
-                    className="text-lg leading-relaxed" 
-                    style={{ color: colors.lightBlue }}
+                    className="text-lg leading-relaxed text-sky-blue"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 1.0 + index * 0.2 }}
@@ -173,7 +163,7 @@ const FeaturesSection: React.FC = () => {
                     {feature.description}
                   </motion.p>
                 </div>
-                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none" style={{ background: `radial-gradient(circle at center, ${colors.primary}20 0%, transparent 70%)` }}></div>
+                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-300 pointer-events-none bg-radial-gradient from-sky-blue/20 to-transparent"></div>
               </motion.div>
             ))}
           </div>
@@ -189,8 +179,7 @@ const FeaturesSection: React.FC = () => {
               {/* SUI Logo in Center */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
                 <motion.div 
-                  className="w-24 h-24 rounded-full flex items-center justify-center shadow-xl border-2 cursor-pointer" 
-                  style={{ background: colors.gradients.primary, borderColor: colors.white }}
+                  className="w-24 h-24 rounded-full flex items-center justify-center shadow-xl border-2 cursor-pointer bg-gradient-to-r from-sky-blue to-brand-teal border-ghost-white"
                   initial={{ scale: 0, rotate: -180 }}
                   whileInView={{ scale: 1, rotate: 0 }}
                   transition={{ 
@@ -202,7 +191,7 @@ const FeaturesSection: React.FC = () => {
                   whileHover={{
                     scale: 1.2,
                     rotate: 360,
-                    boxShadow: `0 0 50px ${colors.primary}80`,
+                    boxShadow: `0 0 50px rgba(111,189,240,0.8)`,
                     transition: { duration: 0.6 }
                   }}
                   whileTap={{ scale: 0.9 }}
@@ -219,8 +208,7 @@ const FeaturesSection: React.FC = () => {
                   </motion.div>
                 </motion.div>
                 <motion.p 
-                  className="text-sm font-semibold mt-2" 
-                  style={{ color: colors.white }}
+                  className="text-sm font-semibold mt-2 text-ghost-white"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 1.2 }}
@@ -237,7 +225,7 @@ const FeaturesSection: React.FC = () => {
                 <motion.line
                   x1="250" y1="250"
                   x2="150" y2="350"
-                  stroke={colors.primary}
+                  stroke="#6FBDF0"
                   strokeWidth="2"
                   strokeDasharray="5,5"
                   opacity="0.6"
@@ -250,7 +238,7 @@ const FeaturesSection: React.FC = () => {
                 <motion.line
                   x1="250" y1="250"
                   x2="350" y2="350"
-                  stroke={colors.primary}
+                  stroke="#6FBDF0"
                   strokeWidth="2"
                   strokeDasharray="5,5"
                   opacity="0.6"
@@ -263,7 +251,7 @@ const FeaturesSection: React.FC = () => {
                 <motion.line
                   x1="250" y1="250"
                   x2="250" y2="120"
-                  stroke={colors.primary}
+                  stroke="#6FBDF0"
                   strokeWidth="2"
                   strokeDasharray="5,5"
                   opacity="0.6"
@@ -277,8 +265,7 @@ const FeaturesSection: React.FC = () => {
               {/* Walrus - Storage Layer */}
               <div className="absolute bottom-8 left-8">
                 <motion.div 
-                  className="backdrop-blur-sm rounded-2xl p-4 border shadow-lg max-w-[140px] cursor-pointer group" 
-                  style={{ backgroundColor: colors.darkNavy, borderColor: colors.primary }}
+                  className="backdrop-blur-sm rounded-2xl p-4 border shadow-lg max-w-[140px] cursor-pointer group bg-charcoal-text border-sky-blue"
                   initial={{ opacity: 0, y: 50, rotateX: -30 }}
                   whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                   transition={{ 
@@ -290,7 +277,7 @@ const FeaturesSection: React.FC = () => {
                   whileHover={{
                     scale: 1.1,
                     rotate: 5,
-                    boxShadow: `0 20px 40px ${colors.primary}40`,
+                    boxShadow: `0 20px 40px rgba(111,189,240,0.4)`,
                     transition: { duration: 0.3 }
                   }}
                   whileTap={{ scale: 0.95 }}
@@ -298,8 +285,7 @@ const FeaturesSection: React.FC = () => {
                 >
                   <div className="flex flex-col items-center text-center">
                     <motion.div 
-                      className="w-12 h-12 rounded-full flex items-center justify-center mb-2" 
-                      style={{ backgroundColor: colors.primary }}
+                      className="w-12 h-12 rounded-full flex items-center justify-center mb-2 bg-sky-blue"
                       whileHover={{
                         rotate: 360,
                         scale: 1.2,
@@ -308,8 +294,8 @@ const FeaturesSection: React.FC = () => {
                     >
                       <Image src="/walrus.svg" alt="Walrus" width={32} height={32} />
                     </motion.div>
-                    <h4 className="font-bold text-sm mb-1" style={{ color: colors.white }}>Walrus</h4>
-                    <p className="text-xs" style={{ color: colors.lightBlue }}>Decentralized Storage</p>
+                    <h4 className="font-bold text-sm mb-1 text-ghost-white">Walrus</h4>
+                    <p className="text-xs text-sky-blue">Decentralized Storage</p>
                   </div>
                 </motion.div>
               </div>
@@ -317,8 +303,7 @@ const FeaturesSection: React.FC = () => {
               {/* Seal - Encryption Layer */}
               <div className="absolute bottom-8 right-8">
                 <motion.div 
-                  className="backdrop-blur-sm rounded-2xl p-4 border shadow-lg max-w-[140px] cursor-pointer group" 
-                  style={{ backgroundColor: colors.darkNavy, borderColor: colors.primary }}
+                  className="backdrop-blur-sm rounded-2xl p-4 border shadow-lg max-w-[140px] cursor-pointer group bg-charcoal-text border-sky-blue"
                   initial={{ opacity: 0, y: 50, rotateX: -30 }}
                   whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                   transition={{ 
@@ -331,7 +316,7 @@ const FeaturesSection: React.FC = () => {
                     scale: 1.1,
                     rotate: -5,
                     y: -10,
-                    boxShadow: `0 20px 40px ${colors.lightBlue}40`,
+                    boxShadow: `0 20px 40px rgba(192,230,255,0.4)`,
                     transition: { duration: 0.3 }
                   }}
                   whileTap={{ scale: 0.95 }}
@@ -339,8 +324,7 @@ const FeaturesSection: React.FC = () => {
                 >
                   <div className="flex flex-col items-center text-center">
                     <motion.div 
-                      className="w-12 h-12 rounded-full flex items-center justify-center mb-2" 
-                      style={{ backgroundColor: colors.lightBlue }}
+                      className="w-12 h-12 rounded-full flex items-center justify-center mb-2 bg-sky-blue"
                       whileHover={{
                         scale: [1, 1.3, 1],
                         borderRadius: ["50%", "30%", "50%"],
@@ -349,8 +333,8 @@ const FeaturesSection: React.FC = () => {
                     >
                       <Image src="/Seal_logo.png" alt="Seal" width={32} height={32} className="object-contain rounded-full" />
                     </motion.div>
-                    <h4 className="font-bold text-sm mb-1" style={{ color: colors.white }}>Seal</h4>
-                    <p className="text-xs" style={{ color: colors.lightBlue }}>Document Encryption</p>
+                    <h4 className="font-bold text-sm mb-1 text-ghost-white">Seal</h4>
+                    <p className="text-xs text-sky-blue">Document Encryption</p>
                   </div>
                 </motion.div>
               </div>
@@ -358,8 +342,7 @@ const FeaturesSection: React.FC = () => {
               {/* Nautilus - Computation Layer */}
               <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
                 <motion.div 
-                  className="backdrop-blur-sm rounded-2xl p-4 border shadow-lg max-w-[140px] cursor-pointer group" 
-                  style={{ backgroundColor: colors.darkNavy, borderColor: colors.primary }}
+                  className="backdrop-blur-sm rounded-2xl p-4 border shadow-lg max-w-[140px] cursor-pointer group bg-charcoal-text border-sky-blue"
                   initial={{ opacity: 0, y: -50, rotateX: 30 }}
                   whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                   transition={{ 
@@ -372,7 +355,7 @@ const FeaturesSection: React.FC = () => {
                     scale: 1.1,
                     rotateX: 15,
                     rotateY: 15,
-                    boxShadow: `0 20px 40px ${colors.primary}40`,
+                    boxShadow: `0 20px 40px rgba(111,189,240,0.4)`,
                     transition: { duration: 0.3 }
                   }}
                   whileTap={{ scale: 0.95 }}
@@ -380,8 +363,7 @@ const FeaturesSection: React.FC = () => {
                 >
                   <div className="flex flex-col items-center text-center">
                     <motion.div 
-                      className="w-12 h-12 rounded-full flex items-center justify-center mb-2" 
-                      style={{ backgroundColor: colors.primary }}
+                      className="w-12 h-12 rounded-full flex items-center justify-center mb-2 bg-sky-blue"
                       whileHover={{
                         rotate: [0, 180, 360],
                         scale: [1, 1.1, 1],
@@ -390,8 +372,8 @@ const FeaturesSection: React.FC = () => {
                     >
                       <Image src="/nautilus.png" alt="Nautilus" width={32} height={32} className="object-contain" />
                     </motion.div>
-                    <h4 className="font-bold text-sm mb-1" style={{ color: colors.white }}>Nautilus</h4>
-                    <p className="text-xs" style={{ color: colors.lightBlue }}>Off-chain Compute</p>
+                    <h4 className="font-bold text-sm mb-1 text-ghost-white">Nautilus</h4>
+                    <p className="text-xs text-sky-blue">Off-chain Compute</p>
                   </div>
                 </motion.div>
               </div>
@@ -406,8 +388,7 @@ const FeaturesSection: React.FC = () => {
                   viewport={{ once: true }}
                 >
                   <motion.div 
-                    className="w-2 h-2 rounded-full" 
-                    style={{ backgroundColor: colors.primary }}
+                    className="w-2 h-2 rounded-full bg-sky-blue"
                     animate={{ 
                       scale: [1, 1.5, 1],
                       opacity: [0.5, 1, 0.5]
@@ -419,8 +400,7 @@ const FeaturesSection: React.FC = () => {
                     }}
                   />
                   <motion.div 
-                    className="w-2 h-2 rounded-full" 
-                    style={{ backgroundColor: colors.lightBlue }}
+                    className="w-2 h-2 rounded-full bg-sky-blue"
                     animate={{ 
                       scale: [1, 1.5, 1],
                       opacity: [0.5, 1, 0.5]
@@ -433,8 +413,7 @@ const FeaturesSection: React.FC = () => {
                     }}
                   />
                   <motion.div 
-                    className="w-2 h-2 rounded-full" 
-                    style={{ backgroundColor: colors.primary }}
+                    className="w-2 h-2 rounded-full bg-sky-blue"
                     animate={{ 
                       scale: [1, 1.5, 1],
                       opacity: [0.5, 1, 0.5]
@@ -452,24 +431,22 @@ const FeaturesSection: React.FC = () => {
               {/* Ecosystem Label */}
               <div className="absolute top-0 left-0 right-0 text-center">
                 <motion.div 
-                  className="inline-block backdrop-blur-sm rounded-full px-4 py-2 border cursor-pointer" 
-                  style={{ backgroundColor: colors.darkNavy, borderColor: colors.primary }}
+                  className="inline-block backdrop-blur-sm rounded-full px-4 py-2 border cursor-pointer bg-charcoal-text border-sky-blue"
                   initial={{ opacity: 0, y: -20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                   whileHover={{
                     scale: 1.05,
-                    boxShadow: `0 10px 30px ${colors.primary}30`,
+                    boxShadow: `0 10px 30px rgba(111,189,240,0.3)`,
                     transition: { duration: 0.3 }
                   }}
                   whileTap={{ scale: 0.95 }}
                   viewport={{ once: true }}
                 >
                   <motion.p 
-                    className="text-sm font-semibold" 
-                    style={{ color: colors.lightBlue }}
+                    className="text-sm font-semibold text-sky-blue"
                     whileHover={{ 
-                      color: colors.primary,
+                      color: "#6FBDF0",
                       transition: { duration: 0.3 }
                     }}
                   >

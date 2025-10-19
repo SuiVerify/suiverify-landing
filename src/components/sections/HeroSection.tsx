@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { colors } from '@/lib/brand';
 import LightRays from '../ui/lightRays';
 import LandingHeader from '../ui/landingHeader';
 import WaitlistDialog from '../ui/WaitlistDialog';
-import { colors } from '@/lib/brand';
 
 const HeroSection: React.FC = () => {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);

@@ -49,13 +49,13 @@ const HowItWorksSection: React.FC = () => {
   ];
 
   return (
-    <section id='howitworks' className="py-20 px-6" style={{ backgroundColor: colors.darkNavy }}>
+    <section id='howitworks' className="py-20 px-6 bg-charcoal-text">
       <div className="max-w-6xl mx-auto text-center">
         <div className="mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            <span style={{ color: colors.primary }}>How It Works</span>
+            <span className="text-sky-blue">How It Works</span>
           </h2>
-          <p className="text-xl" style={{ color: colors.lightBlue }}>Simple steps to get your verified digital identity</p>
+          <p className="text-xl text-sky-blue">Simple steps to get your verified digital identity</p>
         </div>
 
         {/* Modern Feature Grid */}
@@ -78,17 +78,16 @@ const HowItWorksSection: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
               className="group"
             >
-              <div className="relative p-8 rounded-3xl transition-all duration-300 overflow-hidden" style={{ backgroundColor: colors.darkNavy }}>
+              <div className="relative p-8 rounded-3xl transition-all duration-300 overflow-hidden bg-charcoal-text">
                 {/* Subtle Background Pattern */}
-                <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-300" style={{ background: `radial-gradient(circle at center, ${colors.primary} 0%, transparent 70%)` }}></div>
+                <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-300 bg-radial-gradient from-sky-blue to-transparent"></div>
 
                 {/* Icon */}
                 <motion.div
                   initial={{ scale: 0, rotate: -180 }}
                   whileInView={{ scale: 1, rotate: 0 }}
                   transition={{ delay: step.delay + 0.2, type: "spring", stiffness: 150 }}
-                  className="w-16 h-16 rounded-2xl flex items-center mx-auto justify-center mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300"
-                  style={{ background: colors.gradients.primary }}
+                  className="w-16 h-16 rounded-2xl flex items-center mx-auto justify-center mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300 bg-gradient-to-r from-sky-blue to-brand-teal"
                 >
                   <div className="text-white">
                     {step.icon}
@@ -101,10 +100,10 @@ const HowItWorksSection: React.FC = () => {
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: step.delay + 0.4 }}
                 >
-                  <h3 className="text-xl font-bold mb-4" style={{ color: colors.white }}>
+                  <h3 className="text-xl font-bold mb-4 text-ghost-white">
                     {step.title}
                   </h3>
-                  <p className="text-sm leading-relaxed" style={{ color: colors.lightBlue }}>
+                  <p className="text-sm leading-relaxed text-sky-blue">
                     {step.description}
                   </p>
                 </motion.div>
