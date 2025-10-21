@@ -17,13 +17,13 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
   return (
     <div>
       {/* Navigation Bar */}
-      <div className="flex justify-center px-6 manrope font-bold">
+      <div className="flex justify-center px-6 outfit font-bold">
         <GlassSurface
           width={800}
           height={80}
-          borderRadius={50}
+          borderRadius={20}
           opacity={0.2}
-          brightness={70}
+          brightness={90}
           blur={20}
           displace={1}
           backgroundOpacity={0.1}
@@ -38,13 +38,13 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
           <div className=" w-full mx-auto flex items-center justify-between px-6 py-4">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <Image src="/logo.svg" alt="SuiVerify" width={96} height={40} className="h-auto" />
+              <Image src="/head_logo.png" alt="SuiVerify" width={50} height={40} className="h-auto rounded-lg" />
             </div>
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#howitworks" className="text-charcoal-text hover:text-[#4DA2FF] transition-colors">How It Works</a>
-              <a href="#features" className="text-charcoal-text hover:text-[#4DA2FF] transition-colors">Features</a>
+              <a href="#howitworks" className="text-charcoal-text hover:text-secondary transition-colors">How It Works</a>
+              <a href="#features" className="text-charcoal-text hover:text-secondary transition-colors">Features</a>
             </div>
 
             {/* Right Side - Balance and Connect Wallet */}
