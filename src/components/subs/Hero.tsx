@@ -7,7 +7,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="min-h-screen w-full bg-[#f8fafc] relative overflow-hidden">
+    <div className="min-h-screen w-full bg-[#f8fafc] bg-gradient-to-tl from-primary/40 via-[#f8fafc] to-[#f8fafc] relative overflow-hidden">
       {/* Top Fade Grid Background */}
       <div
         className="absolute inset-0 z-0"
@@ -25,11 +25,12 @@ const Hero = (props: Props) => {
       />
       
       {/* Main Content */}
-      <div className="w-full max-w-7xl flex justify-center items-center mx-auto z-50 px-6 pt-[15%]">
+      <div className="w-full max-w-7xl flex justify-center items-center mx-auto z-50 px-6 pt-[10%]">
         {/* Left Content */}
-        <div className="mx-auto outfit text-center z-50">
-          <p className="text-7xl font-bold bg-gradient-to-r from-primary via-primary to-primary text-transparent bg-clip-text pb-4">Your Digital Identity.</p>
-          <p className="text-3xl text-charcoal-text font-light">The Master Key for the Sui Ecosystem</p>
+        <div className="mx-auto outfit text-center z-50 max-w-3xl">
+          <p className="text-7xl font-bold bg-gradient-to-r from-primary via-primary to-primary text-transparent bg-clip-text pb-2 sans-bartle">Your Digital Identity.</p>
+          <p className="text-4xl text-charcoal-text font-light sans-bartle">The Master Key for the Sui Ecosystem</p>
+          <p className="text-lg text-charcoal-text font-light pt-5">Verify once, mint your private soul-bound DID, and unlock seamless access to protocols and dApps across the entire ecosystem. No more repeated KYC.</p>
         </div>        
       </div>
         <div className="flex justify-end w-fit">
