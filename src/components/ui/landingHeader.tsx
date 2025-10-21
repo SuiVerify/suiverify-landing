@@ -17,13 +17,13 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
   return (
     <div>
       {/* Navigation Bar */}
-      <div className="flex justify-center px-6">
+      <div className="flex justify-center px-6 manrope font-bold">
         <GlassSurface
           width={800}
           height={80}
           borderRadius={50}
           opacity={0.2}
-          brightness={90}
+          brightness={70}
           blur={20}
           displace={1}
           backgroundOpacity={0.1}
@@ -33,7 +33,7 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
           greenOffset={6}
           blueOffset={10}
           mixBlendMode="normal"
-          className="manrope bg-secondary"
+          className=" "
         >
           <div className=" w-full mx-auto flex items-center justify-between px-6 py-4">
             {/* Logo */}
@@ -43,14 +43,14 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#howitworks" className="text-charcoal-text hover:text-[#4DA2FF] font-semibold transition-colors">How It Works</a>
-              <a href="#features" className="text-charcoal-text hover:text-[#4DA2FF] font-semibold transition-colors">Features</a>
+              <a href="#howitworks" className="text-charcoal-text hover:text-[#4DA2FF] transition-colors">How It Works</a>
+              <a href="#features" className="text-charcoal-text hover:text-[#4DA2FF] transition-colors">Features</a>
             </div>
 
             {/* Right Side - Balance and Connect Wallet */}
             <div className="flex items-center space-x-4">
               {/* Waitlist Button */}
-              <button onClick={handleWaitlistClick} className="cursor-pointer bg-secondary hover:bg-secondary/80 text-white font-semibold px-6 py-2 rounded-lg transition-colors">
+              <button onClick={handleWaitlistClick} className="cursor-pointer bg-secondary hover:bg-secondary/80 text-white px-6 py-2 rounded-lg transition-colors">
                 Waitlist
               </button>
 
