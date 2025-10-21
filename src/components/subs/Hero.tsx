@@ -2,6 +2,7 @@
 
 import React from "react";
 import CardSwap, { Card } from "@/components/CardSwap";
+import { Button } from "@/components/ui/button";
 
 type Props = {};
 
@@ -31,6 +32,16 @@ const Hero = (props: Props) => {
           <p className="text-7xl font-bold bg-gradient-to-r from-primary via-primary to-primary text-transparent bg-clip-text pb-2 sans-bartle">Your Digital Identity.</p>
           <p className="text-4xl text-charcoal-text font-light sans-bartle">The Master Key for the Sui Ecosystem</p>
           <p className="text-lg text-charcoal-text font-light pt-5">Verify once, mint your private soul-bound DID, and unlock seamless access to protocols and dApps across the entire ecosystem. No more repeated KYC.</p>
+          
+          {/* Action Buttons */}
+          <div className="flex gap-4 pt-8 justify-center">
+            <Button variant="default" size="lg">
+              Get Started
+            </Button>
+            <Button variant="outline" size="lg">
+              Learn More
+            </Button>
+          </div>
         </div>        
       </div>
         <div className="flex justify-end w-fit">
