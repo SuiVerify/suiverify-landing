@@ -36,10 +36,10 @@ const Hero = (props: Props) => {
           {/* Action Buttons */}
           <div className="flex gap-4 pt-8 justify-center">
             <Button variant="default" size="lg">
-              Get Started
+              Request Access
             </Button>
             <Button variant="outline" size="lg">
-              Learn More
+              I Have Access
             </Button>
           </div>
         </div>        
