@@ -3,6 +3,7 @@
 import LandingHeader from "@/components/ui/landingHeader";
 import Hero from "@/components/subs/Hero";
 import React, { useState } from "react";
+import HowItWorks from "@/components/subs/howitworks";
 
 type Props = {};
 
@@ -23,6 +24,7 @@ const page = (props: Props) => {
         onWaitlistClose={() => setIsWaitlistOpen(false)}
         onWaitlistClick={handleWaitlistClick}
       />
+      <HowItWorks />
     </div>
   );
 };

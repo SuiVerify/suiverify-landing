@@ -56,7 +56,7 @@ const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Prop
       {/* Main Content */}
       <div className="w-full max-w-7xl flex justify-center items-center mx-auto z-50 px-6 pt-[10%]">
         {/* Left Content */}
-        <div className="mx-auto outfit text-center z-50 max-w-3xl">
+        <div className="mx-auto outfit text-center z-10 max-w-3xl">
           <p className="text-7xl font-bold bg-gradient-to-r from-primary via-primary to-primary text-transparent bg-clip-text pb-2 sans-bartle">Your Digital Identity.</p>
           <p className="text-4xl text-charcoal-text font-light sans-bartle">The Master Key for the Sui Ecosystem</p>
           <p className="text-lg text-charcoal-text font-light pt-5">Verify once, mint your private soul-bound DID, and unlock seamless access to protocols and dApps across the entire ecosystem. No more repeated KYC.</p>
