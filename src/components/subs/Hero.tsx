@@ -1,12 +1,35 @@
 'use client';
 
-import React from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import CardSwap, { Card } from "@/components/CardSwap";
 import { Button } from "@/components/ui/button";
+import WaitlistDialog from "@/components/ui/WaitlistDialog";
 
 type Props = {};
 
 const Hero = (props: Props) => {
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
+  const [isAccessOpen, setIsAccessOpen] = useState(false);
+
+  const handleWaitlistClick = () => {
+    setIsWaitlistOpen(true);
+  };
+
+  const handleAccessClick = () => {
+    setIsAccessOpen(true);
+  };
+
+  const handleAccessSubmit = () => {
+    // Clear any existing auth data to prevent redirect loops
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('suiverify_auth');
+      localStorage.removeItem('suiverify_login_attempts');
+    }
+    // Route to auth page on same domain (via Vercel rewrite)
+    window.location.href = '/auth';
+  };
+
   return (
     <div className="min-h-screen w-full bg-[#f8fafc] bg-gradient-to-tl from-primary/40 via-[#f8fafc] to-[#f8fafc] relative overflow-hidden">
       {/* Top Fade Grid Background */}
@@ -35,10 +58,10 @@ const Hero = (props: Props) => {
           
           {/* Action Buttons */}
           <div className="flex gap-4 pt-8 justify-center">
-            <Button variant="default" size="lg">
+            <Button variant="default" size="lg" onClick={handleWaitlistClick}>
               Request Access
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" onClick={handleAccessClick}>
               I Have Access
             </Button>
           </div>
@@ -111,6 +134,82 @@ const Hero = (props: Props) => {
             </Card>
           </CardSwap>
         </div>
+
+      {/* Waitlist Dialog */}
+      <WaitlistDialog 
+        isOpen={isWaitlistOpen} 
+        onClose={() => setIsWaitlistOpen(false)} 
+      />
+
+      {/* Access Modal */}
+      <AnimatePresence>
+        {isAccessOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+            onClick={() => setIsAccessOpen(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl relative border-[3px] border-primary outfit"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setIsAccessOpen(false)}
+                className="absolute top-4 right-4 text-charcoal-text/60 hover:text-charcoal-text transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+
+              {/* Header */}
+              <div className="text-center mb-6">
+                <h2 className="text-2xl font-bold mb-2 text-charcoal-text">
+                  Access <span className="text-primary">SuiVerify</span>
+                </h2>
+                <p className="text-sm text-charcoal-text/70">
+                  You already have access to our platform
+                </p>
+              </div>
+
+              {/* Content */}
+              <div className="space-y-6">
+                <div className="text-center">
+                  <p className="mb-4 text-charcoal-text/80">
+                    Great! You already have access to SuiVerify. Click below to proceed to the authentication page and start using our digital identity infrastructure.
+                  </p>
+                </div>
+
+                {/* Access Button */}
+                <div className="flex justify-center">
+                  <Button 
+                    variant="default" 
+                    size="lg" 
+                    onClick={handleAccessSubmit}
+                    className="w-full"
+                  >
+                    Proceed to Authentication
+                  </Button>
+                </div>
+
+                {/* Footer Note */}
+                <div className="text-center pt-4 border-t border-primary/40">
+                  <p className="text-xs text-charcoal-text/60">
+                    You&apos;ll be redirected to our secure authentication system
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

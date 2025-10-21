@@ -313,7 +313,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Waitlist Dialog */}
-      <WaitlistDialog 
+      <WaitlistDialo
         isOpen={isWaitlistOpen} 
         onClose={() => setIsWaitlistOpen(false)} 
       />
