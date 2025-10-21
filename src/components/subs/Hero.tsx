@@ -34,8 +34,8 @@ const Hero = (props: Props) => {
       </div>
         <div className="flex justify-end w-fit">
           <CardSwap
-            width={400}
-            height={300}
+            width={450}
+            height={400}
             cardDistance={50}
             verticalDistance={60}
             delay={3000}
@@ -44,17 +44,58 @@ const Hero = (props: Props) => {
             easing="elastic"
             onCardClick={() => {}}
           >
-            <Card customClass="bg-gradient-to-br from-primary to-secondary text-white p-6">
-              <h3 className="text-xl font-bold mb-3">Nautilus Verification</h3>
-              <p className="text-sm opacity-90">Offchain Verifiable Computation of DID's in Nautilus</p>
+            <Card customClass="bg-primary text-white p-8 rounded-2xl shadow-2xl border border-primary/20">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold">Nautilus Verification</h3>
+              </div>
+              <p className="text-base mb-4 opacity-90 leading-relaxed">
+                Offchain Verifiable Computation of DID's in Nautilus. Advanced cryptographic proofs ensure your identity is verified without compromising privacy.
+              </p>
+              <div className="flex items-center text-sm opacity-75">
+                <div className="w-2 h-2 bg-white/60 rounded-full mr-2"></div>
+                <span>Zero-Knowledge Proofs</span>
+              </div>
             </Card>
-            <Card customClass="bg-gradient-to-br from-secondary to-primary text-white p-6">
-              <h3 className="text-xl font-bold mb-3">SoulBound NFT</h3>
-              <p className="text-sm opacity-90">Receive your verified identity as a DID NFT</p>
+            
+            <Card customClass="bg-primary text-white p-8 rounded-2xl shadow-2xl border border-primary/20">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold">SoulBound NFT</h3>
+              </div>
+              <p className="text-base mb-4 opacity-90 leading-relaxed">
+                Receive your verified identity as a non-transferable DID NFT. Your digital identity is permanently bound to your wallet, ensuring authenticity.
+              </p>
+              <div className="flex items-center text-sm opacity-75">
+                <div className="w-2 h-2 bg-white/60 rounded-full mr-2"></div>
+                <span>Non-Transferable Identity</span>
+              </div>
             </Card>
-            <Card customClass="bg-gradient-to-br from-primary to-accent text-white p-6">
-              <h3 className="text-xl font-bold mb-3">Privacy First</h3>
-              <p className="text-sm opacity-90">Your data is encrypted and stored securely in Walrus</p>
+            
+            <Card customClass="bg-primary text-white p-8 rounded-2xl shadow-2xl border border-accent/20">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold">Privacy First</h3>
+              </div>
+              <p className="text-base mb-4 opacity-90 leading-relaxed">
+                Your data is encrypted and stored securely in Walrus. End-to-end encryption ensures only you control your personal information.
+              </p>
+              <div className="flex items-center text-sm opacity-75">
+                <div className="w-2 h-2 bg-white/60 rounded-full mr-2"></div>
+                <span>End-to-End Encryption</span>
+              </div>
             </Card>
           </CardSwap>
         </div>
