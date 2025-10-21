@@ -114,6 +114,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;

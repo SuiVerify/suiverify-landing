@@ -6,14 +6,17 @@ import CardSwap, { Card } from "@/components/CardSwap";
 import { Button } from "@/components/ui/button";
 import WaitlistDialog from "@/components/ui/WaitlistDialog";
 
-type Props = {};
+type Props = {
+  isWaitlistOpen?: boolean;
+  onWaitlistClose?: () => void;
+};
 
-const Hero = (props: Props) => {
-  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
+const Hero = ({ isWaitlistOpen = false, onWaitlistClose }: Props) => {
   const [isAccessOpen, setIsAccessOpen] = useState(false);
 
   const handleWaitlistClick = () => {
-    setIsWaitlistOpen(true);
+    // This will be handled by the parent component
+    // The button will trigger the parent's onWaitlistClick
   };
 
   const handleAccessClick = () => {
@@ -138,7 +141,7 @@ const Hero = (props: Props) => {
       {/* Waitlist Dialog */}
       <WaitlistDialog 
         isOpen={isWaitlistOpen} 
-        onClose={() => setIsWaitlistOpen(false)} 
+        onClose={onWaitlistClose || (() => {})} 
       />
 
       {/* Access Modal */}

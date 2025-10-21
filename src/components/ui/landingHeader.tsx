@@ -68,7 +68,7 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
             <div className="flex items-center space-x-4">
               {/* Waitlist Button */}
               <Button onClick={handleWaitlistClick} variant="default" size="sm">
-                Waitlist
+                Join Waitlist
               </Button>
 
               {/* Mobile Menu Button */}
