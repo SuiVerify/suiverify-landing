@@ -15,25 +15,25 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
   };
 
   return (
-    <div>
+    <div className="relative">
       {/* Navigation Bar */}
-      <div className="flex justify-center px-6 outfit font-bold">
+      <div className="flex justify-center px-6 outfit font-bold relative z-20">
         <GlassSurface
           width={1000}
           height={80}
           borderRadius={20}
-          opacity={0.2}
-          brightness={90}
-          blur={20}
-          displace={1}
-          backgroundOpacity={0.1}
-          saturation={1.3}
-          distortionScale={-80}
-          redOffset={2}
-          greenOffset={6}
-          blueOffset={10}
+          opacity={0.3}
+          brightness={95}
+          blur={25}
+          displace={1.5}
+          backgroundOpacity={0.15}
+          saturation={1.5}
+          distortionScale={-100}
+          redOffset={3}
+          greenOffset={8}
+          blueOffset={12}
           mixBlendMode="normal"
-          className=" "
+          className="shadow-lg"
         >
           <div className=" w-full mx-auto flex items-center justify-between px-6 py-4">
             {/* Logo */}

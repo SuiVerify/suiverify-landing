@@ -7,7 +7,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="min-h-screen flex justify-center items-center w-full bg-[#f8fafc] relative">
+    <div className="min-h-screen w-full bg-[#f8fafc] relative overflow-hidden">
       {/* Top Fade Grid Background */}
       <div
         className="absolute inset-0 z-0"
@@ -25,15 +25,14 @@ const Hero = (props: Props) => {
       />
       
       {/* Main Content */}
-      <div className="w-full max-w-7xl mx-auto z-50 flex items-center justify-between px-6">
+      <div className="w-full max-w-7xl flex justify-center items-center mx-auto z-50 px-6 pt-[10%]">
         {/* Left Content */}
-        <div className="flex-1 mx-auto outfit">
+        <div className="mx-auto outfit text-center z-50">
           <p className="text-7xl font-bold bg-gradient-to-r from-primary via-primary to-primary text-transparent bg-clip-text pb-4">Your Digital Identity.</p>
           <p className="text-5xl">The Master Key for the Sui Ecosystem</p>
-        </div>
-        
-        {/* Right Content - CardSwap */}
-        <div className="flex-1 flex justify-end">
+        </div>        
+      </div>
+        <div className="flex justify-end w-fit">
           <CardSwap
             width={400}
             height={300}
@@ -59,7 +58,6 @@ const Hero = (props: Props) => {
             </Card>
           </CardSwap>
         </div>
-      </div>
     </div>
   );
 };
