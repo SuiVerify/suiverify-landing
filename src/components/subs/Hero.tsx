@@ -25,11 +25,11 @@ const Hero = (props: Props) => {
       />
       
       {/* Main Content */}
-      <div className="w-full max-w-7xl flex justify-center items-center mx-auto z-50 px-6 pt-[10%]">
+      <div className="w-full max-w-7xl flex justify-center items-center mx-auto z-50 px-6 pt-[15%]">
         {/* Left Content */}
         <div className="mx-auto outfit text-center z-50">
           <p className="text-7xl font-bold bg-gradient-to-r from-primary via-primary to-primary text-transparent bg-clip-text pb-4">Your Digital Identity.</p>
-          <p className="text-5xl">The Master Key for the Sui Ecosystem</p>
+          <p className="text-3xl text-charcoal-text font-light">The Master Key for the Sui Ecosystem</p>
         </div>        
       </div>
         <div className="flex justify-end w-fit">
