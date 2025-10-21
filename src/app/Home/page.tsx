@@ -27,7 +27,7 @@ const page = (props: Props) => {
       </div>
       <div className="w-full max-w-7xl mx-auto z-50">
         <div className=" mx-auto outfit">
-            <p className="text-7xl font-bold bg-gradient-to-r from-secondary via-secondary to-secondary text-transparent bg-clip-text pb-4">Your Digital Identity.</p>
+            <p className="text-7xl font-bold bg-gradient-to-r from-primary via-primary to-primary text-transparent bg-clip-text pb-4">Your Digital Identity.</p>
             <p className="text-5xl">The Master Key for the Sui Ecosystem</p>
         </div>
       </div>

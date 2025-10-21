@@ -19,7 +19,7 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
       {/* Navigation Bar */}
       <div className="flex justify-center px-6 outfit font-bold">
         <GlassSurface
-          width={800}
+          width={1000}
           height={80}
           borderRadius={20}
           opacity={0.2}
@@ -43,14 +43,14 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#howitworks" className="text-charcoal-text hover:text-secondary transition-colors">How It Works</a>
-              <a href="#features" className="text-charcoal-text hover:text-secondary transition-colors">Features</a>
+              <a href="#howitworks" className="text-charcoal-text hover:text-primary transition-colors">How It Works</a>
+              <a href="#features" className="text-charcoal-text hover:text-primary transition-colors">Features</a>
             </div>
 
             {/* Right Side - Balance and Connect Wallet */}
             <div className="flex items-center space-x-4">
               {/* Waitlist Button */}
-              <button onClick={handleWaitlistClick} className="cursor-pointer bg-secondary hover:bg-secondary/80 text-white px-6 py-2 rounded-lg transition-colors">
+              <button onClick={handleWaitlistClick} className="cursor-pointer bg-primary hover:bg-primary/80 text-white px-6 py-2 rounded-lg transition-colors">
                 Waitlist
               </button>
 
