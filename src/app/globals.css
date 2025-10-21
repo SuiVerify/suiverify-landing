@@ -19,23 +19,23 @@
   --font-mono: var(--font-geist-mono);
 
   /* Modern Brand Color Palette */
-  --color-primary: #00D4FF;
-  --color-primary-dark: #0099CC;
-  --color-primary-light: #66E5FF;
-  --color-primary-50: #F0FDFF;
-  --color-primary-100: #CCF7FF;
-  --color-primary-200: #99EFFF;
-  --color-primary-300: #66E5FF;
-  --color-primary-400: #33DBFF;
-  --color-primary-500: #00D4FF;
-  --color-primary-600: #00AACC;
-  --color-primary-700: #008099;
-  --color-primary-800: #005566;
-  --color-primary-900: #002B33;
+  --color-primary: #7C3AED;
+  --color-primary-dark: #5B21B6;
+  --color-primary-light: #A78BFA;
+  --color-primary-50: #F3F0FF;
+  --color-primary-100: #E9E5FF;
+  --color-primary-200: #D6CCFF;
+  --color-primary-300: #B8A2FF;
+  --color-primary-400: #A78BFA;
+  --color-primary-500: #7C3AED;
+  --color-primary-600: #5B21B6;
+  --color-primary-700: #4C1D95;
+  --color-primary-800: #3B1461;
+  --color-primary-900: #2D0F4A;
 
-  --color-secondary: #7C3AED;
-  --color-secondary-dark: #5B21B6;
-  --color-secondary-light: #A78BFA;
+  --color-secondary: #00D4FF;
+  --color-secondary-dark: #0099CC;
+  --color-secondary-light: #66E5FF;
 
   --color-accent: #F59E0B;
   --color-accent-dark: #D97706;
