@@ -18,7 +18,11 @@ const page = (props: Props) => {
       <div className="pt-6 fixed top-0 left-0 right-0 z-50">
         <LandingHeader onWaitlistClick={handleWaitlistClick} />
       </div>
-      <Hero isWaitlistOpen={isWaitlistOpen} onWaitlistClose={() => setIsWaitlistOpen(false)} />
+      <Hero 
+        isWaitlistOpen={isWaitlistOpen} 
+        onWaitlistClose={() => setIsWaitlistOpen(false)}
+        onWaitlistClick={handleWaitlistClick}
+      />
     </div>
   );
 };

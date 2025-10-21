@@ -9,14 +9,16 @@ import WaitlistDialog from "@/components/ui/WaitlistDialog";
 type Props = {
   isWaitlistOpen?: boolean;
   onWaitlistClose?: () => void;
+  onWaitlistClick?: () => void;
 };
 
-const Hero = ({ isWaitlistOpen = false, onWaitlistClose }: Props) => {
+const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Props) => {
   const [isAccessOpen, setIsAccessOpen] = useState(false);
 
   const handleWaitlistClick = () => {
-    // This will be handled by the parent component
-    // The button will trigger the parent's onWaitlistClick
+    if (onWaitlistClick) {
+      onWaitlistClick();
+    }
   };
 
   const handleAccessClick = () => {
