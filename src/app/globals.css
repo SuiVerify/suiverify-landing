@@ -245,7 +245,7 @@ body {
   box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.3);
 }
 
-:root {
+  :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -338,11 +338,22 @@ body {
   font-weight: 900;
   color: #fff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.scroll-stack-card-demo p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  opacity: 0.9;
 }
 
 .scroll-stack-card-demo h3 {
@@ -352,16 +363,16 @@ body {
 }
 
 .scroll-stack-card-demo .stack-img-container {
-  width: 100%;
-  height: 100%;
-  min-height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 1.5rem;
-  border: 10px solid #fff;
+  border: 4px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
+  margin: 0 auto;
 }
 
 .ssc-demo-1 {
@@ -370,8 +381,8 @@ body {
 }
 
 .ssc-demo-2 {
-  background-color: #00D4FF;
-  border: 3px solid #0099CC;
+  background-color: #5B21B6;
+  border: 3px solid #7C3AED;
 }
 
 .ssc-demo-3 {
@@ -380,8 +391,8 @@ body {
 }
 
 .ssc-demo-4 {
-  background-color: #00D4FF;
-  border: 3px solid #0099CC;
+  background-color: #7C3AED;
+  border: 3px solid #5B21B6;
 }
 
 .ssc-demo-5 {
@@ -394,36 +405,74 @@ body {
 
 @media only screen and (min-width: 1240px) {
   .scroll-stack-card-demo {
-    flex-direction: row;
+    flex-direction: column;
     gap: 2rem;
-    text-align: left;
+    text-align: center;
+    padding: 4rem;
   }
 
   .scroll-stack-card-demo h3 {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    font-size: 2.5rem;
   }
 
   .scroll-stack-card-demo .stack-img-container {
-    width: 50%;
-    min-height: auto;
+    width: 140px;
+    height: 140px;
+  }
+
+  .scroll-stack-card-demo p {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .scroll-stack-card-demo {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
   }
 
   .scroll-stack-card-demo h3 {
-    margin-bottom: 1em;
+    font-size: 1.8rem;
+  }
+
+  .scroll-stack-card-demo .stack-img-container {
+    width: 100px;
+    height: 100px;
+    border-width: 3px;
+    border-radius: 1rem;
+  }
+
+  .scroll-stack-card-demo p {
+    text-align: center;
+    max-width: 100%;
+    font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .scroll-stack-card-demo {
     font-size: 1rem;
-    padding: 0.2rem;
-    gap: 0.5rem;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .scroll-stack-card-demo h3 {
+    font-size: 1.5rem;
   }
 
   .scroll-stack-card-demo .stack-img-container {
-    border-width: 5px;
+    border-width: 3px;
     border-radius: 1rem;
-    min-height: 120px;
-    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  .scroll-stack-card-demo p {
+    font-size: 0.85rem;
   }
 }
