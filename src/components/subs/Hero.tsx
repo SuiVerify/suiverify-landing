@@ -103,7 +103,7 @@ const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Prop
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold">Nautilus Verification</h3>
               </div>
               <p className="text-sm sm:text-base mb-3 sm:mb-4 opacity-90 leading-relaxed">
-                Offchain Verifiable Computation of DID's in Nautilus. Advanced cryptographic proofs ensure your identity is verified without compromising privacy.
+                Offchain Verifiable Computation of DID&apos;s in Nautilus. Advanced cryptographic proofs ensure your identity is verified without compromising privacy.
               </p>
               {/* <div className="flex items-center text-sm opacity-75">
                 <div className="w-2 h-2 bg-white/60 rounded-full mr-2"></div>

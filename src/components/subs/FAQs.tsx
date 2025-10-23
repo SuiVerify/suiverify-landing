@@ -3,15 +3,13 @@
 import React, { useState } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react';
 
-type Props = {};
-
 interface FAQItem {
   question: string;
   answer: string;
   category: string;
 }
 
-const FAQs = (props: Props) => {
+const FAQs = () => {
   const [openItems, setOpenItems] = useState<Set<number>>(new Set());
 
   const toggleItem = (index: number) => {
@@ -103,7 +101,7 @@ const FAQs = (props: Props) => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg sm:text-xl text-charcoal-text/70 max-w-3xl mx-auto">
-            Everything you need to know about SuiVerify's decentralized identity platform
+            Everything you need to know about SuiVerify&apos;s decentralized identity platform
           </p>
         </div>
 

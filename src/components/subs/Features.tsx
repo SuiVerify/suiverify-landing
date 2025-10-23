@@ -6,9 +6,7 @@ import CurvedLoop from '../CurvedLoop';
 import { Button } from '@/components/ui/button';
 import WaitlistDialog from '@/components/ui/WaitlistDialog';
 
-type Props = {};
-
-const Features = (props: Props) => {
+const Features = () => {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
   const handleWaitlistClick = () => {

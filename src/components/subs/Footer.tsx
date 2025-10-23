@@ -4,9 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Github, Twitter, Linkedin, Mail, ExternalLink } from 'lucide-react';
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [

@@ -8,9 +8,7 @@ import Features from "@/components/subs/Features";
 import FAQs from "@/components/subs/FAQs";
 import Footer from "@/components/subs/Footer";
 
-type Props = {};
-
-const page = (props: Props) => {
+const HomePage = () => {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
   const handleWaitlistClick = () => {
@@ -35,4 +33,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default HomePage;

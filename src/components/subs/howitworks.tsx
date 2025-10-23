@@ -3,9 +3,7 @@
 import React from 'react';
 import ScrollStack, { ScrollStackItem } from '@/components/ScrollStack';
 
-type Props = {};
-
-const howitworks = (props: Props) => {
+const howitworks = () => {
   return (
     <section id='howitworks' className="py-8 sm:py-10 bg-secondary/10 min-h-screen flex items-center justify-center">
         <div className="">
@@ -30,7 +28,7 @@ const howitworks = (props: Props) => {
             >
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-1 w-full">
               <h3>1. Submit Government Proof</h3>
-              <p className="text-sm text-white/80">Upload official documents required for your DID. This includes government-issued identification such as driver's license, passport, or national ID card. All documents are securely encrypted and processed with bank-level security standards.</p>
+              <p className="text-sm text-white/80">Upload official documents required for your DID. This includes government-issued identification such as driver&apos;s license, passport, or national ID card. All documents are securely encrypted and processed with bank-level security standards.</p>
             </ScrollStackItem>
 
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-2 w-full">
