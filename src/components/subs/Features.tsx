@@ -65,7 +65,7 @@ const Features = (props: Props) => {
 
           {/* Card 02 - Seal (Large) */}
           <div className="sm:col-span-2 lg:col-span-2 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-[0.1em_0.1em_0_0_rgb(20_184_166)] hover:shadow-[0.15em_0.15em_0_0_rgb(20_184_166)] hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] border border-secondary/20 transition-all duration-300 group">
-            <div className="flex flex-col sm:flex-row items-start mb-4 sm:mb-6">
+            <div className="flex gap-2 md:gap-3 items-start mb-4 sm:mb-6">
               <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 bg-secondary/20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-0 sm:mr-4 group-hover:bg-secondary/30 transition-colors">
                 <svg className="w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28 text-secondary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
@@ -88,7 +88,7 @@ const Features = (props: Props) => {
           {/* Row 2: Large + Small */}
           {/* Card 03 - Walrus (Large) */}
           <div className="sm:col-span-2 lg:col-span-2 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-[0.1em_0.1em_0_0_rgb(124_58_237)] hover:shadow-[0.15em_0.15em_0_0_rgb(124_58_237)] hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] border border-primary/20 transition-all duration-300 group">
-            <div className="flex flex-col sm:flex-row items-start mb-4 sm:mb-6">
+            <div className="flex gap-2 md:gap-3 items-start mb-4 sm:mb-6">
               <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 bg-primary/20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-0 sm:mr-4 group-hover:bg-primary/30 transition-colors">
                 <svg className="w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>

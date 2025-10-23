@@ -24,7 +24,7 @@ const Footer = (props: Props) => {
   ];
 
   return (
-    <footer className="bg-primary text-white outfit">
+    <footer className="bg-primary text-white outfit max-w-[100%] md:max-w-[80%] mx-auto rounded-t-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">

@@ -51,7 +51,7 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
                 alt="SuiVerify"
                 width={40}
                 height={32}
-                className="h-auto rounded-lg sm:w-[50px] sm:h-[40px]"
+                className="h-auto rounded-lg"
               />
             </div>
 
@@ -82,7 +82,7 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
             {/* Right Side - Balance and Connect Wallet */}
             <div className="flex items-center space-x-2 sm:space-x-4">
               {/* Waitlist Button */}
-              <Button onClick={handleWaitlistClick} variant="default" size="sm" className="text-xs sm:text-sm px-3 sm:px-4 py-2">
+              <Button onClick={handleWaitlistClick} variant="default" size="sm" className="text-xs sm:text-sm px-3 sm:px-4 py-2 hidden md:block">
                 Join Waitlist
               </Button>
 
