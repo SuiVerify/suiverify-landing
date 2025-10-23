@@ -7,7 +7,7 @@ type Props = {};
 
 const howitworks = (props: Props) => {
   return (
-    <section id='howitworks' className="py-10 px-6 bg-ghost-white min-h-screen flex items-center justify-center">
+    <section id='howitworks' className="py-10 px-6 bg-secondary/10 min-h-screen flex items-center justify-center">
         <div className="">
       <div className="max-w-6xl mx-auto text-center mb-8">
         <h2 className="text-5xl font-bold mb-4 outfit">

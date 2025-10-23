@@ -36,7 +36,7 @@ const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Prop
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-tl from-secondary/40 via-primary-50 to-primary-50 relative overflow-hidden">
+    <div className="min-h-screen w-full bg-gradient-to-tl from-secondary/40 via-ghost-white to-ghost-white relative overflow-hidden">
       {/* Top Fade Grid Background */}
       <div
         className="absolute inset-0 z-0"
@@ -58,8 +58,8 @@ const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Prop
         {/* Left Content */}
         <div className="mx-auto outfit text-center z-10 max-w-3xl">
           <p className="text-7xl font-bold bg-gradient-to-r from-primary via-primary to-primary text-transparent bg-clip-text pb-2 sans-bartle">Your Digital Identity.</p>
-          <p className="text-4xl text-charcoal-text font-light sans-bartle">The Master Key for the Sui Ecosystem</p>
-          <p className="text-lg text-charcoal-text font-light pt-5">Verify once, mint your private soul-bound DID, and unlock seamless access to protocols and dApps across the entire ecosystem. No more repeated KYC.</p>
+          <p className="text-4xl text-charcoal-text font-light sans-bartle pt-2">The Master Key for the Sui Ecosystem</p>
+          <p className="text-lg text-charcoal-text font-light pt-6">Verify once, mint your private soul-bound DID, and unlock seamless access to protocols and dApps across the entire ecosystem. No more repeated KYC.</p>
           
           {/* Action Buttons */}
           <div className="flex gap-4 pt-8 justify-center">
@@ -96,10 +96,10 @@ const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Prop
               <p className="text-base mb-4 opacity-90 leading-relaxed">
                 Offchain Verifiable Computation of DID's in Nautilus. Advanced cryptographic proofs ensure your identity is verified without compromising privacy.
               </p>
-              <div className="flex items-center text-sm opacity-75">
+              {/* <div className="flex items-center text-sm opacity-75">
                 <div className="w-2 h-2 bg-white/60 rounded-full mr-2"></div>
                 <span>Zero-Knowledge Proofs</span>
-              </div>
+              </div> */}
             </Card>
             
             <Card customClass="bg-primary text-white p-8 rounded-2xl shadow-2xl border border-primary-dark">
