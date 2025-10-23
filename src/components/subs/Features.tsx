@@ -7,7 +7,7 @@ type Props = {};
 
 const Features = (props: Props) => {
   return (
-    <section id="features" className="py-20 px-6 bg-ghost-white outfit">
+    <section id="features" className="py-20 px-6 bg-ghost-white outfit pb-32">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -108,7 +108,7 @@ const Features = (props: Props) => {
           </div>
         </div>
       </div>
-      <CurvedLoop marqueeText="• Powered by the SuiStack" className=''/>
+      <CurvedLoop marqueeText="• Powered by the SuiStack" className='outfit'/>
     </section>
   );
 };
