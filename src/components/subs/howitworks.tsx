@@ -11,9 +11,9 @@ const howitworks = (props: Props) => {
         <div className="">
       <div className="max-w-6xl mx-auto text-center mb-8">
         <h2 className="text-5xl font-bold mb-4 outfit">
-          <span className="text-charcoal-text sans-bartle">Get Your All-Access Pass in 3 Simple Steps</span>
+          <span className="text-charcoal-text sans-bartle">Create and Verify a DID – Simple Steps</span>
         </h2>
-        <p className="text-xl text-charcoal-text/70 outfit">Your gateway to compliant DeFi and exclusive dApps on Sui</p>
+        <p className="text-xl text-charcoal-text/70 outfit">Create a fully verifiable DID in just a few clicks.</p>
       </div>
 
       <div className="max-w-6xl mx-auto">
@@ -28,20 +28,28 @@ const howitworks = (props: Props) => {
             blurAmount={0}
           >
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-1 w-full max-w-4xl">
-              <h3>Select & Submit</h3>
-              <p className="text-sm text-white/80">Choose your verification type (e.g., 18+, Citizenship) and securely submit your documents. Your data is encrypted from the start.</p>
+              <h3>1. Submit Government Proof</h3>
+              <p className="text-sm text-white/80">Upload official documents required for your DID. This includes government-issued identification such as driver's license, passport, or national ID card. All documents are securely encrypted and processed with bank-level security standards.</p>
             </ScrollStackItem>
 
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-2 w-full max-w-4xl">
-              <h3>Get Verified</h3>
-             
-              <p className="text-sm text-white/80">Our secure off-chain system verifies your credentials in minutes. Your personal information is never stored on-chain.</p>
+              <h3>2. Verification in Nautilus</h3>
+              <p className="text-sm text-white/80">Documents are authenticated offchain via Nautilus. Our advanced cryptographic verification system processes your documents using zero-knowledge proofs, ensuring authenticity without compromising your privacy. The verification process typically takes 2-5 minutes.</p>
             </ScrollStackItem>
 
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-3 w-full max-w-4xl">
-              <h3>Mint & Access</h3>
-            
-              <p className="text-sm text-white/80">Mint your private, soul-bound NFT. This pass is now your key to access compliant DeFi, exclusive drops, and trusted dApps across Sui.</p>
+              <h3>3. Encryption & Storage</h3>
+              <p className="text-sm text-white/80">Verification proof is encrypted using Seal and stored in Walrus. Your verified credentials are encrypted with military-grade AES-256 encryption and stored in our decentralized Walrus network, ensuring maximum security and data sovereignty.</p>
+            </ScrollStackItem>
+
+            <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-4 w-full max-w-4xl">
+              <h3>4. Claim DID</h3>
+              <p className="text-sm text-white/80">User claims a unique, verifiable DID - ready to use across the ecosystem. Your DID is minted as a soul-bound NFT that cannot be transferred, ensuring it remains permanently linked to your identity. This DID serves as your universal key across all Sui protocols.</p>
+            </ScrollStackItem>
+
+            <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-5 w-full max-w-4xl">
+              <h3>5. Protocol Signature Check</h3>
+              <p className="text-sm text-white/80">Protocols instantly verify DIDs and signatures using the SuiVerify SDK for full compliance and trust. Any protocol in the Sui ecosystem can instantly verify your identity and credentials, enabling seamless access to DeFi, gaming, and other dApps without repeated KYC.</p>
             </ScrollStackItem>
           </ScrollStack>
         </div>
