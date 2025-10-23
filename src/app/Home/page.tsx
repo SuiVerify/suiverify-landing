@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import HowItWorks from "@/components/subs/howitworks";
 import Features from "@/components/subs/Features";
 import FAQs from "@/components/subs/FAQs";
+import Footer from "@/components/subs/Footer";
 
 type Props = {};
 
@@ -29,6 +30,7 @@ const page = (props: Props) => {
       <Features />
       <HowItWorks />
       <FAQs />
+      <Footer />
     </div>
   );
 };
