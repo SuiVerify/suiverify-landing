@@ -62,6 +62,14 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
               >
                 Features
               </a>
+              <a
+                href="https://suiverify.gitbook.io/suiverify/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-charcoal-text hover:text-primary transition-colors"
+              >
+                Documentation
+              </a>
             </div>
 
             {/* Right Side - Balance and Connect Wallet */}
