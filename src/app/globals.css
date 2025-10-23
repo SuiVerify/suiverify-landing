@@ -19,48 +19,48 @@
   --font-mono: var(--font-geist-mono);
 
   /* Modern Brand Color Palette */
-  --color-primary: #7C3AED;
+  --color-primary: #7C3AED; /* deep-amethyst */
   --color-primary-dark: #5B21B6;
-  --color-primary-light: #A78BFA;
-  --color-primary-50: #F3F0FF;
+  --color-primary-light: #BC9AF5; /* amethyst-soft */
+  --color-primary-50: #F2EBFE; /* amethyst-bg */
   --color-primary-100: #E9E5FF;
   --color-primary-200: #D6CCFF;
   --color-primary-300: #B8A2FF;
-  --color-primary-400: #A78BFA;
-  --color-primary-500: #7C3AED;
+  --color-primary-400: #BC9AF5; /* amethyst-soft */
+  --color-primary-500: #7C3AED; /* deep-amethyst */
   --color-primary-600: #5B21B6;
   --color-primary-700: #4C1D95;
   --color-primary-800: #3B1461;
   --color-primary-900: #2D0F4A;
 
-  --color-secondary: #00D4FF;
-  --color-secondary-dark: #0099CC;
-  --color-secondary-light: #66E5FF;
+  --color-secondary: #14B8A6; /* brand-teal */
+  --color-secondary-dark: #0D9488;
+  --color-secondary-light: #5EEAD4;
 
-  --color-accent: #F59E0B;
+  --color-accent: #F59E0B; /* warning-yellow */
   --color-accent-dark: #D97706;
   --color-accent-light: #FCD34D;
 
   /* Neutral Colors */
-  --color-dark: #0F0F23;
-  --color-dark-50: #F8FAFC;
+  --color-dark: #212529; /* charcoal-text */
+  --color-dark-50: #F8F9FA; /* ghost-white */
   --color-dark-100: #F1F5F9;
   --color-dark-200: #E2E8F0;
-  --color-dark-300: #CBD5E1;
+  --color-dark-300: #DEE2E6; /* light-gray */
   --color-dark-400: #94A3B8;
   --color-dark-500: #64748B;
   --color-dark-600: #475569;
   --color-dark-700: #334155;
   --color-dark-800: #1E293B;
-  --color-dark-900: #0F0F23;
+  --color-dark-900: #212529; /* charcoal-text */
 
-  --color-light: #F8FAFC;
-  --color-light-dark: #E2E8F0;
+  --color-light: #F8F9FA; /* ghost-white */
+  --color-light-dark: #DEE2E6; /* light-gray */
 
   /* Semantic Colors */
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
+  --color-success: #10B981; /* success-green */
+  --color-warning: #F59E0B; /* warning-yellow */
+  --color-error: #EF4444; /* error-red */
   --color-info: #3B82F6;
 
   /* Glass Effect Colors */
@@ -375,29 +375,34 @@ body {
   margin: 0 auto;
 }
 
-.ssc-demo-1 {
-  background-color: #7C3AED;
-  border: 3px solid #5B21B6;
-}
-
 .ssc-demo-2 {
-  background-color: #5B21B6;
-  border: 3px solid #7C3AED;
+  background-color: #7C3AED; /* primary - deep-amethyst */
+  border: 3px solid #5B21B6;
+  color: #FFFFFF;
 }
 
-.ssc-demo-3 {
-  background-color: #7C3AED;
-  border: 3px solid #5B21B6;
+.ssc-demo-1 {
+  background-color: #14B8A6; /* secondary - brand-teal */
+  border: 3px solid #0D9488;
+  color: #FFFFFF;
 }
 
 .ssc-demo-4 {
-  background-color: #7C3AED;
+  background-color: #7C3AED; /* primary - deep-amethyst */
   border: 3px solid #5B21B6;
+  color: #FFFFFF;
+}
+
+.ssc-demo-3 {
+  background-color: #14B8A6; /* secondary - brand-teal */
+  border: 3px solid #0D9488;
+  color: #FFFFFF;
 }
 
 .ssc-demo-5 {
-  background-color: #7C3AED;
+  background-color: #7C3AED; /* primary - deep-amethyst */
   border: 3px solid #5B21B6;
+  color: #FFFFFF;
   text-align: center;
   justify-content: center;
   align-items: center;

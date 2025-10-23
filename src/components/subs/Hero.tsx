@@ -36,14 +36,14 @@ const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Prop
   };
 
   return (
-    <div className="min-h-screen w-full bg-[#f8fafc] bg-gradient-to-tl from-primary/40 via-[#f8fafc] to-[#f8fafc] relative overflow-hidden">
+    <div className="min-h-screen w-full bg-gradient-to-tl from-secondary/40 via-primary-50 to-primary-50 relative overflow-hidden">
       {/* Top Fade Grid Background */}
       <div
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: `
-          linear-gradient(to right, #e2e8f0 1px, transparent 1px),
-          linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)
+          linear-gradient(to right, #DEE2E6 1px, transparent 1px),
+          linear-gradient(to bottom, #DEE2E6 1px, transparent 1px)
         `,
           backgroundSize: "20px 30px",
           WebkitMaskImage:
@@ -84,7 +84,7 @@ const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Prop
             easing="elastic"
             onCardClick={() => {}}
           >
-            <Card customClass="bg-primary text-white p-8 rounded-2xl shadow-2xl border border-primary/20">
+            <Card customClass="bg-secondary text-white p-8 rounded-2xl shadow-2xl border border-secondary-dark">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -102,7 +102,7 @@ const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Prop
               </div>
             </Card>
             
-            <Card customClass="bg-primary text-white p-8 rounded-2xl shadow-2xl border border-primary/20">
+            <Card customClass="bg-primary text-white p-8 rounded-2xl shadow-2xl border border-primary-dark">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@ const Hero = ({ isWaitlistOpen = false, onWaitlistClose, onWaitlistClick }: Prop
               </div>
             </Card>
             
-            <Card customClass="bg-primary text-white p-8 rounded-2xl shadow-2xl border border-accent/20">
+            <Card customClass="bg-secondary text-white p-8 rounded-2xl shadow-2xl border border-secondary-dark">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
