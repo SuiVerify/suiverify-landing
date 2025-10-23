@@ -44,7 +44,7 @@ const Features = (props: Props) => {
      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {/* Row 1: Small + Large */}
           {/* Card 01 - Nautilus (Small) */}
-          <div className="md:col-span-1 bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 shadow-lg border border-primary/20 hover:shadow-xl transition-all duration-300 hover:scale-[1.02] group">
+          <div className="md:col-span-1 bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 shadow-[0.1em_0.1em_0_0_rgb(124_58_237)] hover:shadow-[0.15em_0.15em_0_0_rgb(124_58_237)] hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] border border-primary/20 transition-all duration-300 group">
             <div className="flex gap-3 items-center mb-6">
               <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center group-hover:bg-primary/30 transition-colors">
               <UserCheckIcon className="w-12 h-12 text-primary" />
@@ -64,7 +64,7 @@ const Features = (props: Props) => {
           </div>
 
           {/* Card 02 - Seal (Large) */}
-          <div className="md:col-span-2 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-3xl p-8 shadow-lg border border-secondary/20 hover:shadow-xl transition-all duration-300 hover:scale-[1.02] group">
+          <div className="md:col-span-2 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-3xl p-8 shadow-[0.1em_0.1em_0_0_rgb(20_184_166)] hover:shadow-[0.15em_0.15em_0_0_rgb(20_184_166)] hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] border border-secondary/20 transition-all duration-300 group">
             <div className="flex items-start mb-6">
               <div className="w-32 h-32 bg-secondary/20 rounded-2xl flex items-center justify-center mr-4 group-hover:bg-secondary/30 transition-colors">
                 <svg className="w-28 h-28 text-secondary" fill="currentColor" viewBox="0 0 24 24">
@@ -87,7 +87,7 @@ const Features = (props: Props) => {
 
           {/* Row 2: Large + Small */}
           {/* Card 03 - Walrus (Large) */}
-          <div className="md:col-span-2 bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 shadow-lg border border-primary/20 hover:shadow-xl transition-all duration-300 hover:scale-[1.02] group">
+          <div className="md:col-span-2 bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 shadow-[0.1em_0.1em_0_0_rgb(124_58_237)] hover:shadow-[0.15em_0.15em_0_0_rgb(124_58_237)] hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] border border-primary/20 transition-all duration-300 group">
             <div className="flex items-start mb-6">
               <div className="w-32 h-32 bg-primary/20 rounded-2xl flex items-center justify-center mr-4 group-hover:bg-primary/30 transition-colors">
                 <svg className="w-28 h-28 text-primary" fill="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ const Features = (props: Props) => {
           </div>
 
           {/* Card 04 - SuiVerify-sdk (Small) */}
-          <div className="md:col-span-1 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-3xl p-8 shadow-lg border border-secondary/20 hover:shadow-xl transition-all duration-300 hover:scale-[1.02] group">
+          <div className="md:col-span-1 bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-3xl p-8 shadow-[0.1em_0.1em_0_0_rgb(20_184_166)] hover:shadow-[0.15em_0.15em_0_0_rgb(20_184_166)] hover:-translate-x-[0.05em] hover:-translate-y-[0.05em] border border-secondary/20 transition-all duration-300 group">
             <div className="flex gap-3 items-center mb-6">
               <div className="w-16 h-16 bg-secondary/20 rounded-2xl flex items-center justify-center group-hover:bg-secondary/30 transition-colors">
               <BadgeCheckIcon className="w-12 h-12 text-secondary" />
