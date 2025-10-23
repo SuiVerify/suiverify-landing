@@ -25,8 +25,8 @@ const page = (props: Props) => {
         onWaitlistClose={() => setIsWaitlistOpen(false)}
         onWaitlistClick={handleWaitlistClick}
       />
-      <HowItWorks />
       <Features />
+      <HowItWorks />
     </div>
   );
 };
