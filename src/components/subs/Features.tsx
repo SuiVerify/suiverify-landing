@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { BadgeCheckIcon, UserCheckIcon } from 'lucide-react';
+import CurvedLoop from '../CurvedLoop';
 type Props = {};
 
 const Features = (props: Props) => {
@@ -16,9 +17,6 @@ const Features = (props: Props) => {
           <p className="text-xl text-charcoal-text/70 max-w-4xl mx-auto mb-8">
             Every feature in SuiVerify is built to do one thing: ensure identity security, regulatory compliance, and seamless verifiability.
           </p>
-          <h3 className="text-2xl font-bold text-charcoal-text sans-bartle">
-            Powered by the SuiStack
-          </h3>
         </div>
 
      {/* Bento Grid Layout - 2x2 with varied sizes */}
@@ -110,6 +108,7 @@ const Features = (props: Props) => {
           </div>
         </div>
       </div>
+      <CurvedLoop marqueeText="• Powered by the SuiStack" className=''/>
     </section>
   );
 };
