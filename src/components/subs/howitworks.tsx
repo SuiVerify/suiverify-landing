@@ -17,16 +17,17 @@ const howitworks = (props: Props) => {
       </div>
 
       <div className="max-w-6xl mx-auto">
-        <div className="relative h-[500px] overflow-hidden outfit">
-          <ScrollStack 
-            className="scroll-stack-demo-container"
-            itemDistance={200}
-            itemStackDistance={30}
-            stackPosition="20%"
-            baseScale={0.85}
-            rotationAmount={0}
-            blurAmount={0}
-          >
+        <div className="relative h-[500px] overflow-hidden outfit flex justify-center">
+          <div className="w-full max-w-4xl">
+            <ScrollStack 
+              className="scroll-stack-demo-container"
+              itemDistance={200}
+              itemStackDistance={30}
+              stackPosition="20%"
+              baseScale={0.85}
+              rotationAmount={0}
+              blurAmount={0}
+            >
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-1 w-full max-w-4xl">
               <h3>1. Submit Government Proof</h3>
               <p className="text-sm text-white/80">Upload official documents required for your DID. This includes government-issued identification such as driver's license, passport, or national ID card. All documents are securely encrypted and processed with bank-level security standards.</p>
@@ -51,7 +52,8 @@ const howitworks = (props: Props) => {
               <h3>5. Protocol Signature Check</h3>
               <p className="text-sm text-white/80">Protocols instantly verify DIDs and signatures using the SuiVerify SDK for full compliance and trust. Any protocol in the Sui ecosystem can instantly verify your identity and credentials, enabling seamless access to DeFi, gaming, and other dApps without repeated KYC.</p>
             </ScrollStackItem>
-          </ScrollStack>
+            </ScrollStack>
+          </div>
         </div>
       </div>
       </div>
