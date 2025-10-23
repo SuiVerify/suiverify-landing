@@ -4,6 +4,7 @@ import LandingHeader from "@/components/ui/landingHeader";
 import Hero from "@/components/subs/Hero";
 import React, { useState } from "react";
 import HowItWorks from "@/components/subs/howitworks";
+import Features from "@/components/subs/Features";
 
 type Props = {};
 
@@ -25,6 +26,7 @@ const page = (props: Props) => {
         onWaitlistClick={handleWaitlistClick}
       />
       <HowItWorks />
+      <Features />
     </div>
   );
 };

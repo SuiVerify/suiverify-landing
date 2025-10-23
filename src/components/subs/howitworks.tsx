@@ -11,7 +11,7 @@ const howitworks = (props: Props) => {
         <div className="">
       <div className="max-w-6xl mx-auto text-center mb-8">
         <h2 className="text-5xl font-bold mb-4 outfit">
-          <span className="text-primary sans-bartle">Get Your All-Access Pass in 3 Simple Steps</span>
+          <span className="text-charcoal-text sans-bartle">Get Your All-Access Pass in 3 Simple Steps</span>
         </h2>
         <p className="text-xl text-charcoal-text/70 outfit">Your gateway to compliant DeFi and exclusive dApps on Sui</p>
       </div>
