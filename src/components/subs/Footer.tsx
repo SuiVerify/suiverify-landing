@@ -24,7 +24,7 @@ const Footer = (props: Props) => {
   ];
 
   return (
-    <footer className="bg-charcoal-text text-white outfit">
+    <footer className="bg-primary text-white outfit">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
@@ -56,7 +56,7 @@ const Footer = (props: Props) => {
                     href={social.href}
                     target={social.href.startsWith('mailto:') ? '_self' : '_blank'}
                     rel={social.href.startsWith('mailto:') ? '' : 'noopener noreferrer'}
-                    className="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200 group"
+                    className="w-8 h-8 sm:w-10 sm:h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-200 group"
                     aria-label={social.name}
                   >
                     <IconComponent className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:text-white" />
@@ -76,7 +76,7 @@ const Footer = (props: Props) => {
                     href={link.href}
                     target={link.external ? '_blank' : '_self'}
                     rel={link.external ? 'noopener noreferrer' : ''}
-                    className="text-sm sm:text-base text-white/70 hover:text-primary transition-colors duration-200 flex items-center group"
+                    className="text-sm sm:text-base text-white/70 hover:text-secondary transition-colors duration-200 flex items-center group"
                   >
                     {link.name}
                     {link.external && (
@@ -93,19 +93,19 @@ const Footer = (props: Props) => {
             <h4 className="text-base sm:text-lg font-semibold text-white mb-4 sm:mb-6">Get in Touch</h4>
             <div className="space-y-3 sm:space-y-4">
               <div className="flex items-start space-x-2 sm:space-x-3">
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-secondary mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-white/70 text-xs sm:text-sm">Email us</p>
                   <a 
                     href="mailto:hello@suiverify.xyz" 
-                    className="text-sm sm:text-base text-white hover:text-primary transition-colors duration-200 break-all"
+                    className="text-sm sm:text-base text-white hover:text-secondary transition-colors duration-200 break-all"
                   >
                     hello@suiverify.xyz
                   </a>
                 </div>
               </div>
               <div className="flex items-start space-x-2 sm:space-x-3">
-                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-primary rounded-full mt-0.5 flex-shrink-0"></div>
+                <div className="w-4 h-4 sm:w-5 sm:h-5 bg-secondary rounded-full mt-0.5 flex-shrink-0"></div>
                 <div>
                   <p className="text-white/70 text-xs sm:text-sm">Built on</p>
                   <p className="text-sm sm:text-base text-white font-medium">Sui Blockchain</p>
@@ -124,13 +124,13 @@ const Footer = (props: Props) => {
             <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-6 text-xs sm:text-sm">
               <a 
                 href="#" 
-                className="text-white/60 hover:text-primary transition-colors duration-200"
+                className="text-white/60 hover:text-secondary transition-colors duration-200"
               >
                 Privacy Policy
               </a>
               <a 
                 href="#" 
-                className="text-white/60 hover:text-primary transition-colors duration-200"
+                className="text-white/60 hover:text-secondary transition-colors duration-200"
               >
                 Terms of Service
               </a>

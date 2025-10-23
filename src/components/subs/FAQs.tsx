@@ -146,11 +146,15 @@ const FAQs = (props: Props) => {
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl sm:rounded-2xl border border-primary/20 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
+                className={`rounded-xl sm:rounded-2xl border-2 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl ${
+                  index % 2 === 0 
+                    ? 'bg-primary/10 text-charcoal-text border-primary/30 shadow-[0.1em_0.1em_0_0_rgb(124_58_237)] hover:shadow-[0.15em_0.15em_0_0_rgb(124_58_237)] hover:bg-primary/20' 
+                    : 'bg-secondary/10 text-charcoal-text border-secondary/30 shadow-[0.1em_0.1em_0_0_rgb(20_184_166)] hover:shadow-[0.15em_0.15em_0_0_rgb(20_184_166)] hover:bg-secondary/20'
+                }`}
               >
                 <button
                   onClick={() => toggleItem(index)}
-                  className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6 text-left flex items-center justify-between hover:bg-primary/5 transition-colors duration-200"
+                  className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6 text-left flex items-center justify-between hover:bg-white/20 transition-colors duration-200"
                 >
                   <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-charcoal-text pr-3 sm:pr-4">
                     {item.question}
@@ -170,7 +174,7 @@ const FAQs = (props: Props) => {
                   }`}
                 >
                   <div className="px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6">
-                    <div className="border-t border-primary/10 pt-3 sm:pt-4">
+                    <div className="border-t border-charcoal-text/20 pt-3 sm:pt-4">
                       <p className="text-sm sm:text-base text-charcoal-text/80 leading-relaxed whitespace-pre-line">
                         {item.answer}
                       </p>

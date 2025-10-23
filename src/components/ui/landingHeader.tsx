@@ -3,16 +3,23 @@
 import Image from "next/image";
 import GlassSurface from "../GlassSurface";
 import { Button } from "./button";
+import { useState } from "react";
 
 interface LandingHeaderProps {
   onWaitlistClick?: () => void;
 }
 
 const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const handleWaitlistClick = () => {
     if (onWaitlistClick) {
       onWaitlistClick();
     }
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -80,9 +87,12 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
               </Button>
 
               {/* Mobile Menu Button */}
-              <button className="sm:hidden p-2">
+              <button 
+                onClick={toggleMobileMenu}
+                className="sm:hidden p-2 text-charcoal-text hover:text-primary transition-colors"
+              >
                 <svg
-                  className="w-5 h-5 sm:w-6 sm:h-6 text-black"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -91,7 +101,7 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
+                    d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
                   />
                 </svg>
               </button>
@@ -99,6 +109,50 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
           </div>
         </GlassSurface>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="sm:hidden absolute top-full left-0 right-0 z-40 bg-white/95 backdrop-blur-md border border-white/30 rounded-b-2xl shadow-lg mx-4 mt-2 outfit">
+          <div className="px-4 py-6 space-y-4">
+            <a
+              href="#howitworks"
+              className="block text-base text-charcoal-text hover:text-primary transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              How It Works
+            </a>
+            <a
+              href="#features"
+              className="block text-base text-charcoal-text hover:text-primary transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Features
+            </a>
+            <a
+              href="https://suiverify.gitbook.io/suiverify/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-base text-charcoal-text hover:text-primary transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Documentation
+            </a>
+            <div className="pt-4 border-t border-primary/20">
+              <Button 
+                onClick={() => {
+                  handleWaitlistClick();
+                  setIsMobileMenuOpen(false);
+                }} 
+                variant="default" 
+                size="sm" 
+                className="w-full justify-center"
+              >
+                Join Waitlist
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
