@@ -19,7 +19,7 @@ const page = (props: Props) => {
 
   return (
     <div className="">
-      <div className="pt-6 fixed top-0 left-0 right-0 z-50">
+      <div className="pt-6 fixed top-0 left-0 right-0 z-9999">
         <LandingHeader onWaitlistClick={handleWaitlistClick} />
       </div>
       <Hero 

@@ -100,23 +100,23 @@ const FAQs = (props: Props) => {
     : faqData.filter(item => item.category === selectedCategory);
 
   return (
-    <section id="faqs" className="py-20 px-6 bg-ghost-white outfit">
+    <section id="faqs" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-ghost-white outfit">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-6 text-charcoal-text sans-bartle">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-charcoal-text sans-bartle">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-charcoal-text/70 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-charcoal-text/70 max-w-3xl mx-auto">
             Everything you need to know about SuiVerify's decentralized identity platform
           </p>
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
           <button
             onClick={() => setSelectedCategory('All')}
-            className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
               selectedCategory === 'All'
                 ? 'bg-primary text-white shadow-lg'
                 : 'bg-white text-charcoal-text border-2 border-primary/20 hover:border-primary/40'
@@ -128,7 +128,7 @@ const FAQs = (props: Props) => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
                 selectedCategory === category
                   ? 'bg-primary text-white shadow-lg'
                   : 'bg-white text-charcoal-text border-2 border-primary/20 hover:border-primary/40'
@@ -146,20 +146,20 @@ const FAQs = (props: Props) => {
             return (
               <div
                 key={index}
-                className="bg-white rounded-2xl border border-primary/20 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
+                className="bg-white rounded-xl sm:rounded-2xl border border-primary/20 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
               >
                 <button
                   onClick={() => toggleItem(index)}
-                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-primary/5 transition-colors duration-200"
+                  className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6 text-left flex items-center justify-between hover:bg-primary/5 transition-colors duration-200"
                 >
-                  <h3 className="text-xl font-semibold text-charcoal-text pr-4">
+                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-charcoal-text pr-3 sm:pr-4">
                     {item.question}
                   </h3>
                   <div className="flex-shrink-0">
                     {isOpen ? (
-                      <ChevronUpIcon className="w-6 h-6 text-primary" />
+                      <ChevronUpIcon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                     ) : (
-                      <ChevronDownIcon className="w-6 h-6 text-primary" />
+                      <ChevronDownIcon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                     )}
                   </div>
                 </button>
@@ -169,9 +169,9 @@ const FAQs = (props: Props) => {
                     isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  <div className="px-8 pb-6">
-                    <div className="border-t border-primary/10 pt-4">
-                      <p className="text-charcoal-text/80 leading-relaxed whitespace-pre-line">
+                  <div className="px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6">
+                    <div className="border-t border-primary/10 pt-3 sm:pt-4">
+                      <p className="text-sm sm:text-base text-charcoal-text/80 leading-relaxed whitespace-pre-line">
                         {item.answer}
                       </p>
                     </div>
@@ -183,18 +183,18 @@ const FAQs = (props: Props) => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <p className="text-lg text-charcoal-text/70 mb-6">
+        <div className="text-center mt-12 sm:mt-16">
+          <p className="text-base sm:text-lg text-charcoal-text/70 mb-4 sm:mb-6">
             Still have questions? Check out our comprehensive documentation.
           </p>
           <a
             href="https://suiverify.gitbook.io/suiverify/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary-dark transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-semibold rounded-lg sm:rounded-xl hover:bg-primary-dark transition-colors duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base"
           >
             View Documentation
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
