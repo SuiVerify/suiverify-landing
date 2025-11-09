@@ -18,7 +18,7 @@ const Footer = () => {
     { name: 'Twitter', href: 'https://twitter.com/suiver1fy', icon: Twitter },
     { name: 'GitHub', href: 'https://github.com/suiverify', icon: Github },
     { name: 'LinkedIn', href: 'https://linkedin.com/company/suiverify', icon: Linkedin },
-    { name: 'Email', href: 'mailto:hello@suiverify.xyz', icon: Mail },
+    { name: 'Email', href: 'mailto:suiverify.sui@gmail.com', icon: Mail },
   ];
 
   return (
@@ -95,10 +95,10 @@ const Footer = () => {
                 <div>
                   <p className="text-white/70 text-xs sm:text-sm">Email us</p>
                   <a 
-                    href="mailto:hello@suiverify.xyz" 
+                    href="mailto:suiverify.sui@gmail.com" 
                     className="text-sm sm:text-base text-white hover:text-secondary transition-colors duration-200 break-all"
                   >
-                    hello@suiverify.xyz
+                    suiverify.sui@gmail.com
                   </a>
                 </div>
               </div>
@@ -106,7 +106,7 @@ const Footer = () => {
                 <div className="w-4 h-4 sm:w-5 sm:h-5 bg-secondary rounded-full mt-0.5 flex-shrink-0"></div>
                 <div>
                   <p className="text-white/70 text-xs sm:text-sm">Built on</p>
-                  <p className="text-sm sm:text-base text-white font-medium">Sui Blockchain</p>
+                  <p className="text-sm sm:text-base text-white font-medium">Sui</p>
                 </div>
               </div>
             </div>
