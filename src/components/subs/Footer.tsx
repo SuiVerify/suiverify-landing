@@ -16,7 +16,7 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'Twitter', href: 'https://twitter.com/suiver1fy', icon: Twitter },
-    { name: 'GitHub', href: 'https://github.com/suiverify', icon: Github },
+    // { name: 'GitHub', href: 'https://github.com/suiverify', icon: Github },
     { name: 'LinkedIn', href: 'https://linkedin.com/company/suiverify', icon: Linkedin },
     { name: 'Email', href: 'mailto:suiverify.sui@gmail.com', icon: Mail },
   ];
