@@ -14,21 +14,27 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SuiVerify - Digital Identity Infrastructure",
-  description: "Secure identity verification powered by blockchain technology. Verify your identity using Aadhaar documents and claim DID NFTs on the Sui blockchain.",
+  description: "One Identity Layer to Bridge Old and New Internets.",
   keywords: ["digital identity", "blockchain", "verification", "Aadhaar", "DID", "NFT", "Sui", "KYC", "government"],
   authors: [{ name: "SuiVerify" }],
   robots: "index, follow",
   icons: {
-    icon: "/head_logo.png",
+    icon: [
+      { url: "/head_logo.png", sizes: "any", type: "image/png" },
+      { url: "/head_logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/head_logo.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/head_logo.png",
+    shortcut: "/head_logo.png",
   },
   openGraph: {
     type: "website",
     url: "https://suiverify.xyz/",
     title: "SuiVerify - Digital Identity Infrastructure",
-    description: "Secure identity verification powered by blockchain technology. Verify your identity using Aadhaar documents and claim DID NFTs on the Sui blockchain.",
+    description: "One Identity Layer to Bridge Old and New Internets.",
     images: [
       {
-        url: "/logo_with_fill.png",
+        url: "/cover.png",
         width: 1200,
         height: 630,
         alt: "SuiVerify - Digital Identity Infrastructure",
@@ -42,10 +48,10 @@ export const metadata: Metadata = {
     site: "@suiverify",
     creator: "@suiverify",
     title: "SuiVerify - Digital Identity Infrastructure",
-    description: "Secure identity verification powered by blockchain technology. Verify your identity using Aadhaar documents and claim DID NFTs on the Sui blockchain.",
+    description: "One Identity Layer to Bridge Old and New Internets.",
     images: [
       {
-        url: "/logo_with_fill.png",
+        url: "/cover.png",
         alt: "SuiVerify - Digital Identity Infrastructure",
       },
     ],
