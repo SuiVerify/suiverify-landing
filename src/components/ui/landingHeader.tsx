@@ -82,7 +82,7 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
             {/* Right Side - Balance and Connect Wallet */}
             <div className="flex items-center space-x-2 sm:space-x-4">
               {/* Waitlist Button */}
-              <Button onClick={handleWaitlistClick} variant="default" size="sm" className="text-xs sm:text-sm px-3 sm:px-4 py-2 hidden md:block">
+              <Button onClick={handleWaitlistClick} variant="default" size="sm" className="text-xs sm:text-sm px-3 sm:px-4 py-2 bg-secondary border-secondary hidden md:block">
                 Join Waitlist
               </Button>
 

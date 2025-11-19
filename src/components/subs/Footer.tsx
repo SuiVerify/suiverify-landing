@@ -32,9 +32,9 @@ const Footer = () => {
               <Image
                 src="/head_logo.png"
                 alt="SuiVerify"
-                width={40}
+                width={32}
                 height={32}
-                className="h-auto rounded-lg sm:w-[50px] sm:h-[40px]"
+                className="h-auto rounded-lg sm:w-[50px] sm:h-[50px]"
               />
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white sans-bartle">SuiVerify</h3>
