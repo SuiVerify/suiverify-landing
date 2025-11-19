@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SuiVerify - Digital Identity Infrastructure",
-  description: "One Identity Layer to Bridge Old and New Internets.",
+  title: "SuiVerify - Decentralised Identity Layer",
+  description: "One Identity Layer to Bridge Old and New Internets",
   keywords: ["digital identity", "blockchain", "verification", "Aadhaar", "DID", "NFT", "Sui", "KYC", "government"],
   authors: [{ name: "SuiVerify" }],
   robots: "index, follow",
