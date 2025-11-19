@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SuiVerify - Digital Identity Infrastructure",
-  description: "Secure identity verification powered by blockchain technology. Verify your identity using Aadhaar documents and claim DID NFTs on the Sui blockchain.",
+  title: "SuiVerify - Decentralised Identity Layer",
+  description: "One Identity Layer to Bridge Old and New Internets",
   keywords: ["digital identity", "blockchain", "verification", "Aadhaar", "DID", "NFT", "Sui", "KYC", "government"],
   authors: [{ name: "SuiVerify" }],
   robots: "index, follow",
