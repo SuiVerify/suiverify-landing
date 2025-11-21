@@ -25,7 +25,7 @@ const FAQs = () => {
   const faqData: FAQItem[] = [
     {
       question: "What is SuiVerify?",
-      answer: "SuiVerify is a decentralized digital identity (DID) platform built on the Sui blockchain. It allows you to verify your real-world identity once, mint a private Soul-Bound NFT (SBT) as proof, and then use that 'all-access pass' to interact seamlessly with both Web2 and Web3 applications—bridging traditional user experiences with decentralized trust, all without ever re‑submitting your personal data.",
+      answer: "SuiVerify is a Decentralized Identity (DID) platform built on the Sui blockchain. It allows you to verify your real-world identity once, mint a private Soul-Bound NFT (SBT) as proof, and then use that 'all-access pass' to interact seamlessly with both Web2 and Web3 applications—bridging traditional user experiences with decentralized trust, all without ever re‑submitting your personal data.",
       category: "General"
     },
     {
@@ -88,8 +88,8 @@ const FAQs = () => {
   const categories = Array.from(new Set(faqData.map(item => item.category)));
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
-  const filteredFAQs = selectedCategory === 'All' 
-    ? faqData 
+  const filteredFAQs = selectedCategory === 'All'
+    ? faqData
     : faqData.filter(item => item.category === selectedCategory);
 
   return (
@@ -109,11 +109,10 @@ const FAQs = () => {
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
           <button
             onClick={() => setSelectedCategory('All')}
-            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
-              selectedCategory === 'All'
+            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${selectedCategory === 'All'
                 ? 'bg-primary text-white shadow-lg'
                 : 'bg-white text-charcoal-text border-2 border-primary/20 hover:border-primary/40'
-            }`}
+              }`}
           >
             All
           </button>
@@ -121,11 +120,10 @@ const FAQs = () => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
-                selectedCategory === category
+              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${selectedCategory === category
                   ? 'bg-primary text-white shadow-lg'
                   : 'bg-white text-charcoal-text border-2 border-primary/20 hover:border-primary/40'
-              }`}
+                }`}
             >
               {category}
             </button>
@@ -139,11 +137,10 @@ const FAQs = () => {
             return (
               <div
                 key={index}
-                className={`rounded-xl sm:rounded-2xl border-2 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl ${
-                  index % 2 === 0 
-                    ? 'bg-primary/10 text-charcoal-text border-primary/30 shadow-[0.1em_0.1em_0_0_rgb(124_58_237)] hover:shadow-[0.15em_0.15em_0_0_rgb(124_58_237)] hover:bg-primary/20' 
+                className={`rounded-xl sm:rounded-2xl border-2 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl ${index % 2 === 0
+                    ? 'bg-primary/10 text-charcoal-text border-primary/30 shadow-[0.1em_0.1em_0_0_rgb(124_58_237)] hover:shadow-[0.15em_0.15em_0_0_rgb(124_58_237)] hover:bg-primary/20'
                     : 'bg-secondary/10 text-charcoal-text border-secondary/30 shadow-[0.1em_0.1em_0_0_rgb(20_184_166)] hover:shadow-[0.15em_0.15em_0_0_rgb(20_184_166)] hover:bg-secondary/20'
-                }`}
+                  }`}
               >
                 <button
                   onClick={() => toggleItem(index)}
@@ -160,11 +157,10 @@ const FAQs = () => {
                     )}
                   </div>
                 </button>
-                
+
                 <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
                 >
                   <div className="px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6">
                     <div className="border-t border-charcoal-text/20 pt-3 sm:pt-4">

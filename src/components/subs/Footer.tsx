@@ -38,11 +38,11 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white sans-bartle">SuiVerify</h3>
-                <p className="text-xs sm:text-sm text-white/70">Digital Identity Infrastructure</p>
+                <p className="text-xs sm:text-sm text-white/70">Decentralised Identity Infrastructure</p>
               </div>
             </div>
             <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-md mb-4 sm:mb-6">
-              Secure, private, and decentralized identity verification on the Sui blockchain. 
+              Secure, private, and decentralized identity verification on the Sui blockchain.
               Verify once, trusted everywhere across the entire ecosystem.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
@@ -94,8 +94,8 @@ const Footer = () => {
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-secondary mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-white/70 text-xs sm:text-sm">Email us</p>
-                  <a 
-                    href="mailto:suiverify.sui@gmail.com" 
+                  <a
+                    href="mailto:suiverify.sui@gmail.com"
                     className="text-sm sm:text-base text-white hover:text-secondary transition-colors duration-200 break-all"
                   >
                     suiverify.sui@gmail.com
@@ -120,21 +120,21 @@ const Footer = () => {
               © {currentYear} SuiVerify. All rights reserved.
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-6 text-xs sm:text-sm">
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-white/60 hover:text-secondary transition-colors duration-200"
               >
                 Privacy Policy
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-white/60 hover:text-secondary transition-colors duration-200"
               >
                 Terms of Service
               </a>
-              <a 
-                href="https://suiverify.gitbook.io/suiverify/" 
-                target="_blank" 
+              <a
+                href="https://suiverify.gitbook.io/suiverify/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/60 hover:text-primary transition-colors duration-200 flex items-center"
               >

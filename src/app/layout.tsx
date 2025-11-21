@@ -30,14 +30,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://suiverify.xyz/",
-    title: "SuiVerify - Digital Identity Infrastructure",
+    title: "SuiVerify - Decentralised Identity Infrastructure",
     description: "One Identity Layer to Bridge Old and New Internets.",
     images: [
       {
         url: "/cover.png",
         width: 1200,
         height: 630,
-        alt: "SuiVerify - Digital Identity Infrastructure",
+        alt: "SuiVerify - Decentralised Identity Infrastructure",
       },
     ],
     siteName: "SuiVerify",
@@ -47,12 +47,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@suiverify",
     creator: "@suiverify",
-    title: "SuiVerify - Digital Identity Infrastructure",
+    title: "SuiVerify - Decentralised Identity Infrastructure",
     description: "One Identity Layer to Bridge Old and New Internets.",
     images: [
       {
         url: "/cover.png",
-        alt: "SuiVerify - Digital Identity Infrastructure",
+        alt: "SuiVerify - Decentralised Identity Infrastructure",
       },
     ],
   },

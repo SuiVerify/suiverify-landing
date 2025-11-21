@@ -44,7 +44,7 @@ const WaitlistDialog: React.FC<WaitlistDialogProps> = ({ isOpen, onClose }) => {
                 Join the <span className="text-primary">SuiVerify</span> Waitlist
               </h2>
               <p className="text-sm text-charcoal-text/70">
-                Be the first to test our Digital Identity Infrastructure
+                Be the first to test our Decentralised Identity Infrastructure
               </p>
             </div>
 
@@ -52,7 +52,7 @@ const WaitlistDialog: React.FC<WaitlistDialogProps> = ({ isOpen, onClose }) => {
             <div className="md:space-y-6 sm:space-y-3">
               <div className="text-center">
                 <p className="md:mb-4 sm:mb-2 text-charcoal-text/80">
-                  Ready to experience the future of identity verification? 
+                  Ready to experience the future of identity verification?
                   Contact our team to get early access and help us test our infrastructure.
                 </p>
               </div>
