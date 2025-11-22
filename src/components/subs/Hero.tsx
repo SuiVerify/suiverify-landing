@@ -50,7 +50,7 @@ const Hero = () => {
               rel="noopener noreferrer"
             >
               <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                Explorer
+                View Explorer
               </Button>
             </a>
           </div>
@@ -62,7 +62,7 @@ const Hero = () => {
               className="w-full sm:w-auto"
             >
               <Button variant="outline" size="sm" className="w-full sm:w-auto">
-                Explorer
+                View Explorer
               </Button>
             </a>
             <a
