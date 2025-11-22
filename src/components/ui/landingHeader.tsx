@@ -5,18 +5,8 @@ import GlassSurface from "../GlassSurface";
 import { Button } from "./button";
 import { useState } from "react";
 
-interface LandingHeaderProps {
-  onWaitlistClick?: () => void;
-}
-
-const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
+const LandingHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const handleWaitlistClick = () => {
-    if (onWaitlistClick) {
-      onWaitlistClick();
-    }
-  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -77,14 +67,29 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
               >
                 Documentation
               </a>
+              <a
+                href="https://explorer.suiverify.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm lg:text-base text-charcoal-text hover:text-primary transition-colors"
+              >
+                Explorer
+              </a>
             </div>
 
             {/* Right Side - Balance and Connect Wallet */}
             <div className="flex items-center space-x-2 sm:space-x-4">
-              {/* Waitlist Button */}
-              <Button onClick={handleWaitlistClick} variant="default" size="sm" className="text-xs sm:text-sm px-3 sm:px-4 py-2 bg-secondary border-secondary hidden md:block">
-                Join Waitlist
-              </Button>
+              {/* Get Verified Button */}
+              <a
+                href="https://app.suiverify.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden md:block"
+              >
+                <Button variant="default" size="sm" className="text-xs sm:text-sm px-3 sm:px-4 py-2 bg-secondary border-secondary">
+                  Get verified
+                </Button>
+              </a>
 
               {/* Mobile Menu Button */}
               <button 
@@ -137,18 +142,31 @@ const LandingHeader: React.FC<LandingHeaderProps> = ({ onWaitlistClick }) => {
             >
               Documentation
             </a>
+            <a
+              href="https://explorer.suiverify.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-base text-charcoal-text hover:text-primary transition-colors py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Explorer
+            </a>
             <div className="pt-4 border-t border-primary/20">
-              <Button 
-                onClick={() => {
-                  handleWaitlistClick();
-                  setIsMobileMenuOpen(false);
-                }} 
-                variant="default" 
-                size="sm" 
-                className="w-full justify-center"
+              <a
+                href="https://app.suiverify.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                Join Waitlist
-              </Button>
+                <Button 
+                  variant="default" 
+                  size="sm" 
+                  className="w-full justify-center"
+                >
+                  Get verified
+                </Button>
+              </a>
             </div>
           </div>
         </div>

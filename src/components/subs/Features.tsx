@@ -1,21 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import CurvedLoop from "../CurvedLoop";
 import { Button } from "@/components/ui/button";
-import WaitlistDialog from "@/components/ui/WaitlistDialog";
 import Image from "next/image";
 
 const Features = () => {
-  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
-
-  const handleWaitlistClick = () => {
-    setIsWaitlistOpen(true);
-  };
-
-  const handleWaitlistClose = () => {
-    setIsWaitlistOpen(false);
-  };
 
   return (
     <section
@@ -32,14 +22,19 @@ const Features = () => {
             Every feature in SuiVerify is built to do one thing: ensure identity
             security, regulatory compliance, and seamless verifiability.
           </p>
-          <Button
-            variant="default"
-            size="lg"
-            onClick={handleWaitlistClick}
-            className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
+          <a
+            href="https://app.suiverify.xyz"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Join Waitlist
-          </Button>
+            <Button
+              variant="default"
+              size="lg"
+              className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
+            >
+              Get verified
+            </Button>
+          </a>
         </div>
 
         {/* Bento Grid Layout - 2x2 with varied sizes */}
@@ -152,9 +147,6 @@ const Features = () => {
           </div>
         </div>
       </div>
-
-      {/* Waitlist Dialog */}
-      <WaitlistDialog isOpen={isWaitlistOpen} onClose={handleWaitlistClose} />
 
       <CurvedLoop marqueeText="• Powered by the SuiStack" className="outfit" />
     </section>
