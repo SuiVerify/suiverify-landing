@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="mx-auto outfit text-center lg:text-left z-10 max-w-3xl lg:max-w-none lg:flex-1">
           <p className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary via-primary to-primary text-transparent bg-clip-text pb-2 sans-bartle">Your Digital Identity.</p>
           <p className="text-sm sm:text-3xl md:text-4xl text-charcoal-text font-light sans-bartle pt-2">One Identity Layer to Bridge Old and New Internets</p>
-          <p className="text-sm sm:text-lg text-charcoal-text font-light pt-4 sm:pt-6">Verify once, mint your private soul-bound DID, and unlock seamless access to protocols and dApps across the entire ecosystem. No more repeated KYC.</p>
+          <p className="text-sm sm:text-lg text-charcoal-text font-light pt-4 sm:pt-6">Verify your identity once, claim your private digital identity credential, and unlock seamless access to services and applications across the entire ecosystem. No more repeated verification.</p>
           
           {/* Action Buttons */}
           <div className="hidden md:flex flex-col sm:flex-row gap-4 pt-6 sm:pt-8 justify-center lg:justify-start ">
@@ -101,7 +101,7 @@ const Hero = () => {
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold">Nautilus Verification</h3>
               </div>
               <p className="text-sm sm:text-base mb-3 sm:mb-4 opacity-90 leading-relaxed">
-                Offchain Verifiable Computation of DID&apos;s in Nautilus. Advanced cryptographic proofs ensure your identity is verified without compromising privacy.
+                Secure identity verification powered by Nautilus. Advanced cryptographic proofs ensure your identity is verified without compromising privacy.
               </p>
               {/* <div className="flex items-center text-sm opacity-75">
                 <div className="w-2 h-2 bg-white/60 rounded-full mr-2"></div>
@@ -119,7 +119,7 @@ const Hero = () => {
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold">SoulBound NFT</h3>
               </div>
               <p className="text-sm sm:text-base mb-3 sm:mb-4 opacity-90 leading-relaxed">
-                Receive your verified identity as a non-transferable DID NFT. Your digital identity is permanently bound to your wallet, ensuring authenticity.
+                Receive your verified identity as a secure, non-transferable digital credential. Your identity is permanently linked to your account, ensuring authenticity and preventing fraud.
               </p>
               <div className="flex items-center text-xs sm:text-sm opacity-75">
                 <div className="w-2 h-2 bg-white/60 rounded-full mr-2"></div>

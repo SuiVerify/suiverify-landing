@@ -43,7 +43,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm sm:text-base text-white/80 leading-relaxed max-w-md mb-4 sm:mb-6">
-              Secure, private, and decentralized identity verification on the Sui blockchain.
+              Secure, private, and decentralized identity verification infrastructure.
               Verify once, trusted everywhere across the entire ecosystem.
             </p>
             <div className="mb-6 sm:mb-8">

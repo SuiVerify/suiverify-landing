@@ -32,7 +32,7 @@ const Features = () => {
               size="lg"
               className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
             >
-              Get verified
+              Get verified now
             </Button>
           </a>
         </div>
