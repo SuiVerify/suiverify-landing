@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Github, Twitter, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -45,6 +46,21 @@ const Footer = () => {
               Secure, private, and decentralized identity verification on the Sui blockchain.
               Verify once, trusted everywhere across the entire ecosystem.
             </p>
+            <div className="mb-6 sm:mb-8">
+              <a
+                href="https://app.suiverify.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="bg-secondary hover:bg-secondary/90 text-white border-secondary"
+                >
+                  Get Started
+                </Button>
+              </a>
+            </div>
             <div className="flex space-x-3 sm:space-x-4">
               {socialLinks.map((social) => {
                 const IconComponent = social.icon;
