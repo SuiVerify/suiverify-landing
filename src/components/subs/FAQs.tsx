@@ -35,47 +35,47 @@ const FAQs = () => {
     },
     {
       question: "What is the point of SuiVerify?",
-      answer: "The point is to solve two major problems in Web3:\n\nFor Users: It eliminates the need to perform KYC (Know Your Customer) for every new dApp you want to use. You verify once and are trusted everywhere.\n\nFor Protocols: It provides a simple, secure way to verify user status (e.g., \"is this user government authorized\") to meet compliance and prevent fraud, without the security risk of handling or storing users' sensitive personal data.",
+      answer: "The point is to solve two major problems in Web3:\n\nFor Users: It eliminates the need to perform KYC (Know Your Customer) for every new App you want to use. You verify once and are trusted everywhere.\n\nFor Protocols: It provides a simple, secure way to verify user status (e.g., \"is this user government authorized\") to meet compliance and prevent fraud, without the security risk of handling or storing user's sensitive personal data.",
       category: "General"
     },
     {
       question: "What does \"Verify Once, Trusted Everywhere\" mean?",
-      answer: "\"Verify Once, Trusted Everywhere\" means that a user completes the government-grade identity verification process one single time by submitting official documents (e.g., Aadhaar or driver's license) through SuiVerify. After approval and minting their Soul-Bound Token (SBT), any decentralized (Web3) or traditional (Web2) protocol integrated with SuiVerify can instantly verify the user's status without requiring repeated verifications or document uploads.\n\nThis cross-platform interoperability enables protocols—whether dApps on Sui blockchain, other blockchains, or even Web2 applications—to check verification status efficiently via SuiVerify's SDK or smart contract. Because verification happens once and is reusable, the fee charged for integration and verification is significantly lower compared to traditional centralized KYC providers, which charge for each re-verification instance. This results in major cost savings for protocols integrating SuiVerify for one-time DID verification versus continually paying high fees to centralized KYC services.",
+      answer: "\"Verify Once, Trusted Everywhere\" means that a user completes the government-grade identity verification process one single time by submitting official documents (e.g., Aadhaar or driver's license) through SuiVerify. After approval and minting their Soul-Bound Token (SBT), any decentralized (Web3) or traditional (Web2) protocol integrated with SuiVerify can instantly verify the user's status without requiring repeated verifications or document uploads.\n\nThis cross-platform interoperability enables protocols—whether dApps on Sui blockchain, other blockchains, or even Web2 applications—to check verification status efficiently via SuiVerify's SDK. Because verification happens once and is reusable, the fee charged for integration and verification is significantly lower compared to traditional centralized KYC providers, which charge for each re-verification instance. This results in major cost savings for protocols integrating SuiVerify for one-time DID verification versus continually paying high fees to centralized KYC services.",
       category: "General"
     },
     {
       question: "Is my personal data (like my passport) stored on the blockchain?",
-      answer: "Absolutely not. This is the most important part of our design. Your personal documents are:\n\n• Encrypted using Seal and stored in Walrus for later compliance to only government and the verified entities that the users allow to actually view their privacy document for any further verification using Seal's special capability like giving access to only for some certain time\n\n• The government document is also verified offchain using Nautilus - we make it the offchain computation verifiable onchain in Sui",
+      answer: "Absolutely not. This is the most important part of our design. Your personal documents are:\n\n• Encrypted using Seal and stored in Walrus for later compliance to only government and the verified entities that the users allow to actually view their privacy document for any further verification using Seal's special capability like giving access to only for some certain time.\n\n• The government document is also verified offchain using Nautilus - we make the offchain computation verifiable onchain in Sui.",
       category: "Security & Privacy"
     },
     {
       question: "If my data isn't on-chain, what does a dApp see when I use my pass?",
-      answer: "The protocols which integrate SuiVerify SDK sees only the cryptographic attestations we did onchain for each DID in the metadata, not the data behind it. Using Nautilus we make it verifiable and also even can be compliant with verified entities.",
+      answer: "The protocols which integrate SuiVerify SDK sees only the cryptographic attestations we did onchain for each DID verification we did, not the data behind it. Using Nautilus we make it verifiable and also even can be compliant with verified entities.",
       category: "Security & Privacy"
     },
     {
       question: "What is a Soul-Bound Token (SBT) and why is it non-transferable?",
-      answer: "A Soul-Bound Token is an NFT that is permanently tied to a specific wallet. It cannot be sold or transferred. We use this model because your identity is not for sale. It ensures that only you can use your verification pass and that no one can steal or buy your on-chain identity.",
+      answer: "A Soul-Bound Token is an NFT that is permanently tied to a specific address. It cannot be sold or transferred. We use this model because your identity is not for sale. It ensures that only you can use your verification pass and that no one can steal or buy your on-chain identity.",
       category: "Security & Privacy"
     },
     {
       question: "How do I get verified?",
-      answer: "The process is simple:\n\n1. Connect Wallet: Go to the SuiVerify app and connect your Sui wallet, or use Google auth to create wallet\n2. Select DID Type: Choose the verification you need (e.g., \"18+ Age Verification\")\n3. Submit Documents: Securely upload your documents through our portal\n4. Mint Your Pass: Once our system verifies you (usually in minutes), you will be able to mint your Soul-Bound NFT",
+      answer: "The process is simple:\n\n1. Connect Wallet: Go to the SuiVerify app and connect your Sui wallet, or use Google auth to create wallet using zkLogin.\n2. Select DID Type: Choose the verification you need (e.g., \"18+ Age Verification\").\n3. Submit Documents: Securely upload your documents through our portal.\n4. Mint Your Pass: Once our system verifies you, you will be able to mint your Soul-Bound NFT",
       category: "For Users"
     },
     {
       question: "What documents do you accept?",
-      answer: "We are launching with support for key identity documents like Aadhaar (for Indian citizenship and age verification) and plan to rapidly expand to include international passports, driver's licenses, and other government-issued IDs.",
+      answer: "We are launching with support for key identity documents like Aadhaar, PAN and plan to rapidly expand to include international passports, driver's licenses, and other government-issued IDs.",
       category: "For Users"
     },
     {
       question: "How much does it cost?",
-      answer: "There will be a one-time fee to cover the on-chain verification costs and DID approval process one time per DID being passed into the protocol - very less compared to centralized KYC's and the on-chain gas fees for minting your SBT. For Web2 protocols integration we provide the template for the initial verification without any Web3 components involved in UI side so user can easily verify and use our decentralized infra. This one-time fee gives you a permanent, reusable pass for the entire ecosystem in Web2 and Web3.",
+      answer: "There will be no one-time fee to cover the gas fee for claiming the SBT - we use zklogin + enoki (for gas sponsorship). For Web2 protocols integration we provide the template for the initial verification without any Web3 components involved in UI side so user can easily verify and use our decentralized infra.",
       category: "For Users"
     },
     {
       question: "How do protocols integrate with SuiVerify?",
-      answer: "Protocols can integrate SuiVerify using our simple SDK or by calling our smart contract. They just need to check if a user's wallet holds a valid SuiVerify SBT and what verification status it contains. Integration is designed to be straightforward for developers.",
+      answer: "Protocols can integrate SuiVerify using our simple SDK. They just need to check if a user's wallet holds a valid SuiVerify SBT and what verification status it contains. Integration is designed to be straightforward for developers.",
       category: "For Protocols"
     },
     {
