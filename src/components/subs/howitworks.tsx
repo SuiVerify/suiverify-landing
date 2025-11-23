@@ -28,12 +28,12 @@ const howitworks = () => {
             >
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-1 w-full">
               <h3>1. Submit Government Proof</h3>
-              <p className="text-sm text-white/80">Upload official documents required for your DID. This includes government-issued identification such as driver&apos;s license, passport, or national ID card. All documents are securely encrypted and processed with bank-level security standards.</p>
+              <p className="text-sm text-white/80">Upload official documents required for your DID. This includes government-issued identification such as driver&apos;s license, passport, or national ID card. All documents are securely encrypted and processed.</p>
             </ScrollStackItem>
 
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-2 w-full">
               <h3>2. Verification in Nautilus</h3>
-              <p className="text-sm text-white/80">Documents are authenticated offchain via Nautilus. Our advanced cryptographic verification system processes your documents using zero-knowledge proofs, ensuring authenticity without compromising your privacy. The verification process typically takes 2-5 minutes.</p>
+              <p className="text-sm text-white/80">Documents are verified offchain via Nautilus. Our advanced verification system processes your documents, ensuring authenticity without compromising your privacy.</p>
             </ScrollStackItem>
 
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-3 w-full">

@@ -85,11 +85,11 @@ const Features = () => {
             <p className="text-charcoal-text/80 leading-relaxed text-base sm:text-lg lg:text-3xl mb-3 sm:mb-4">
               Seal acts as the Encryption and Decryption layer. KYC documents
               are encrypted using Seal and access controls are provided via
-              Smart contracts.
+              Smart contracts based on the user allowance for their reusage of issued DID.
             </p>
             <div className="flex items-center text-xs sm:text-sm text-secondary font-medium">
               <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>
-              Encryption Layer
+              Access control 
             </div>
           </div>
 
@@ -110,12 +110,12 @@ const Features = () => {
               </div>
             </div>
             <p className="text-charcoal-text/80 leading-relaxed text-base sm:text-lg lg:text-3xl mb-3 sm:mb-4">
-              The encrypted documents (post verification, attestation) are
+              The encrypted documents are
               stored in Walrus via our Walrus Publisher and Aggregator.
             </p>
             <div className="flex items-center text-xs sm:text-sm text-primary font-medium">
               <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-              Document Storage
+              Encrypted Document Storage
             </div>
           </div>
 
@@ -136,9 +136,9 @@ const Features = () => {
             </div>
             <p className="text-charcoal-text/80 leading-relaxed text-sm sm:text-base lg:text-xl mb-3 sm:mb-4">
               Validates signatures against the latest Nautilus enclave, verifies
-              offchain attestations, and checks PCR integrity—delivering
+              offchain attestations, and checks PCR integrity - delivering
               reproducible builds and trusted compliance for protocols and
-              government.
+              the verified entities.
             </p>
             <div className="flex items-center text-xs sm:text-sm text-secondary font-medium">
               <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>
