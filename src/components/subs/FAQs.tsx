@@ -178,10 +178,10 @@ const FAQs = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-12 sm:mt-16">
           <p className="text-base sm:text-lg text-charcoal-text/70 mb-4 sm:mb-6">
-            Still have questions? Check out our comprehensive documentation.
+            Still have questions about the SuiVerify SDK? Check out our documentation.
           </p>
           <a
-            href="https://suiverify.gitbook.io/suiverify/"
+            href="https://www.npmjs.com/package/suiverify-sdk"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-semibold rounded-lg sm:rounded-xl hover:bg-primary-dark transition-colors duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base"
