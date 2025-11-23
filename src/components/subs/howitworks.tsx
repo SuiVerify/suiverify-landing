@@ -28,7 +28,7 @@ const howitworks = () => {
             >
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-1 w-full">
               <h3>1. Submit Government Proof</h3>
-              <p className="text-sm text-white/80">Upload official documents required for your DID. This includes government-issued identification such as driver&apos;s license, passport, or national ID card. All documents are securely encrypted and processed.</p>
+              <p className="text-sm text-white/80">Upload official documents required for your DID. This includes government-issued identification such as driver&apos;s license, passport, or national ID card. All documents are securely processed and encrypted.</p>
             </ScrollStackItem>
 
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-2 w-full">
@@ -38,17 +38,17 @@ const howitworks = () => {
 
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-3 w-full">
               <h3>3. Encryption & Storage</h3>
-              <p className="text-sm text-white/80">Verification proof is encrypted using Seal and stored in Walrus. Your verified credentials are encrypted with military-grade AES-256 encryption and stored in our decentralized Walrus network, ensuring maximum security and data sovereignty.</p>
+              <p className="text-sm text-white/80">Document is encrypted using Seal and stored in Walrus. Your verified Documents are encrypted with Seal encryption and stored in Walrus, ensuring maximum security and data sovereignty.</p>
             </ScrollStackItem>
 
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-4 w-full">
               <h3>4. Claim DID</h3>
-              <p className="text-sm text-white/80">User claims a unique, verifiable DID - ready to use across the ecosystem. Your DID is minted as a soul-bound NFT that cannot be transferred, ensuring it remains permanently linked to your identity. This DID serves as your universal key across all Sui protocols.</p>
+              <p className="text-sm text-white/80">User claims a unique, verifiable DID - ready to use across the ecosystem. Your DID is minted as a soul-bound NFT that cannot be transferred, ensuring it remains permanently linked to your identity. This DID serves as your universal key across all protocols integrated with SuiVerify.</p>
             </ScrollStackItem>
 
             <ScrollStackItem itemClassName="scroll-stack-card-demo ssc-demo-5 w-full">
               <h3>5. Protocol Signature Check</h3>
-              <p className="text-sm text-white/80">Protocols instantly verify DIDs and signatures using the SuiVerify SDK for full compliance and trust. Any protocol in the Sui ecosystem can instantly verify your identity and credentials, enabling seamless access to DeFi, gaming, and other dApps without repeated KYC.</p>
+              <p className="text-sm text-white/80">Protocols instantly verify DIDs and signatures using the SuiVerify SDK for full compliance and trust. Any protocol integrated SuiVerify SDK ecosystem can instantly verify your identity, enabling seamless access to DeFi, gaming, and other Apps without repeated KYC.</p>
             </ScrollStackItem>
             </ScrollStack>
           </div>
