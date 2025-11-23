@@ -60,7 +60,7 @@ const LandingHeader = () => {
                 Features
               </a>
               <a
-                href="https://suiverify.gitbook.io/suiverify/"
+                href="https://www.npmjs.com/package/suiverify-sdk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm lg:text-base text-charcoal-text hover:text-primary transition-colors"
